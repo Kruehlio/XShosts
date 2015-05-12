@@ -1,0 +1,802 @@
+\documentclass[traditabstract, longauth]{aa}
+
+\usepackage[stable]{footmisc}
+\usepackage{graphicx}
+\usepackage[varg]{txfonts}
+\usepackage{hyperref}
+\usepackage{natbib,twoopt}
+\usepackage{lscape}
+\usepackage{hyperref} 
+\usepackage{subcaption}
+\usepackage{nicefrac}
+\bibpunct{(}{)}{;}{a}{}{,} 
+
+\makeatother\bibpunct[, ]{(}{)}{;}{a}{}{,}
+
+\bibliographystyle{./bibtex/aa}
+
+\newcommand{\farc}{\hbox{$.\!\!^{\prime\prime}$}} 
+\newcommand{\ergA}{$\rm{erg\,c m^{-2}\,s^{-1}\,\AA\,^{-1}}$} 
+\newcommand{\erg}{$\rm{erg\,cm^{-2}\,s^{-1}}$} 
+\newcommand{\kms}{$\rm{km\,s^{-1}}$}
+\newcommand{\hb}{H$\beta$} 
+\newcommand{\ha}{H$\alpha$}
+\newcommand{\hg}{H$\gamma$} 
+\newcommand{\hi}{\mbox{H\,{\sc i}}} 
+\newcommand{\hii}{\mbox{H\,{\sc ii}}} 
+\newcommand{\ebv}{$E_{B-V}\,$} 
+\newcommand{\oh}{12+\log(\rm{O/H})}
+
+\newcommand{\oi}{[\ion{O}{i}]} 
+\newcommand{\sii}{[\ion{S}{ii}]} 
+\newcommand{\oii}{[\ion{O}{ii}]} 
+\newcommand{\oiii}{[\ion{O}{iii}]}
+\newcommand{\neiii}{[\ion{Ne}{iii}]}
+\newcommand{\nii}{[\ion{N}{ii}]} 
+\newcommand{\griz}{$g' r' i' z'$}
+\newcommand{\JHK}{$JHK_{\rm{s}}$}
+\newcommand{\gK}{$g' r' i' z' JHK_{\rm{s}}$}
+\newcommand{\Msun}{$M_\odot$}
+\newcommand{\Msunyr}{$M_\odot\,\rm{yr}^{-1}$}
+\newcommand\nodata{ ~$\cdots$~ }
+
+\begin{document}
+\title{GRB hosts through cosmic time\thanks{Based on observations at ESO, Program IDs: 084.A-0260, 084.A-0303, 
+085.A-0009,  086.B-0954, 086.A-0533, 086.A-0874, 087.A-0055, 087.A-0451, 087.B-0737, 088.A-0051, 088.A-0644, 089.A-0067, 089.A-0120, 089.D-0256,  089.A-0868, 090.A-0088, 090.A-0760, 090.A-0825, 091.A-0342, 091.A-0703, 091.A-0877, 091.C-0934, 092.A-0076, 092.A-0124, 092.A-0231, 093.A-0069, 094.A-0593}}
+\subtitle{VLT/X-shooter emission-line spectroscopy of 96 $\gamma$-ray-burst-selected galaxies at $0.1 < z < 3.6$}
+\titlerunning{VLT/X-shooter spectroscopy of GRB hosts}
+
+
+\author{T.~Kr\"{u}hler\inst{1,2}
+\and D.~Malesani\inst{2}
+\and J.~P.~U.~Fynbo\inst{2} 
+\and O.~E.~Hartoog \inst{3}
+\and J.~Hjorth \inst{2}
+\and P.~Jakobsson \inst{4}
+\and D.~A.~Perley \inst{5, 6}
+\and A.~Rossi \inst{7, 8}
+\and P.~Schady \inst{9} 
+\and S.~Schulze \inst{10, 11}
+\and N.~R.~Tanvir \inst{12}
+\and S.~D.~Vergani \inst{13, 14}
+\and K.~Wiersema \inst{12}
+\and P.~M.~J.~Afonso \inst{15}
+\and J.~Bolmer \inst{9}
+\and Z.~Cano \inst{4}
+\and S.~Covino \inst{14}
+\and V.~D'Elia \inst{16, 17}
+\and A.~de~Ugarte~Postigo \inst{18, 2}
+\and R.~Filgas \inst{19}
+\and M.~Friis \inst{4}
+\and J.~F.~Graham \inst{9}
+\and J.~Greiner \inst{9}
+\and P.~Goldoni \inst{20}
+\and A.~Gomboc \inst{21}
+\and F.~Hammer \inst{13}
+\and J.~Japelj \inst{21}
+\and D.~A.~Kann \inst{8, 9}
+\and L.~Kaper \inst{3}
+\and S.~Klose \inst{8}
+\and A.~J.~Levan \inst{22}
+\and G.~Leloudas \inst{23, 2}
+\and B.~Milvang-Jensen \inst{2}
+\and A.~Nicuesa~Guelbenzu \inst{8}
+\and E.~Palazzi \inst{7}
+\and E.~Pian \inst{24, 25, 26}
+\and S.~Piranomonte \inst{15}
+\and R.~S\'{a}nchez-Ram\'{\i}rez \inst{27, 28, 18}
+\and S.~Savaglio \inst{29, 24}
+\and J.~Selsing \inst{2}
+\and G.~Tagliaferri \inst{14}
+\and P.~M.~Vreeswijk \inst{22, 30}
+\and D.~J.~Watson \inst{2}
+\and D.~Xu \inst{2}}
+
+\institute{European Southern Observatory, Alonso de C\'{o}rdova 3107, Vitacura, Casilla 19001, Santiago 19, Chile 
+\and Dark Cosmology Centre, Niels Bohr Institute, University of Copenhagen, Juliane Maries Vej 30, 2100 K\o benhavn \O, Denmark 
+\and Astronomical Institute Anton Pannekoek, University of Amsterdam, Science Park 904, NL-1098 XH Amsterdam, the Netherlands
+\and Centre for Astrophysics and Cosmology, Science Institute, University of Iceland, Dunhagi 5, IS-107 Reykjavik, Iceland
+\and Department of Astronomy, California Institute of Technology, MC 249-17, 1200 East California Blvd, Pasadena CA 91125, USA
+\and Hubble Fellow
+\and INAF-IASF Bologna, Area della Ricerca CNR, via Gobetti 101, I-40129 Bologna, Italy 
+\and Th\"uringer Landessternwarte Tautenburg, Sternwarte 5, 07778 Tautenburg, Germany
+\and Max-Planck-Institut f\"{u}r extraterrestrische Physik, Giessenbachstra\ss e, 85748 Garching, Germany
+\and Instituto de Astrof\'isica, Facultad de F\'isica, Pontificia Universidad Cat\'olica de Chile, Vicu\~{n}a Mackenna 4860, 7820436 Macul, Santiago, Chile
+\and Millennium Institute of Astrophysics, Vicu\~{n}a Mackenna 4860, 7820436 Macul, Santiago, Chile
+\and Department of Physics and Astronomy, University of Leicester, University Road, Leicester, LE1 7RH, UK
+\and Laboratoire Galaxies Etoiles Physique et Instrumentation, Observatoire de Paris, 5 place Jules Janssen, 92195 Meudon, France
+\and INAF, Osservatorio Astronomico di Brera, Via E. Bianchi 46, I-23807 Merate (LC), Italy
+\and American River College, Physics and Astronomy Dpt., 4700 College Oak Drive, Sacramento, CA 95841, USA
+\and INAF, Osservatorio Astronomico di Roma, Via Frascati 33, I-00040 Monteporzio Catone, Italy
+\and ASI-Science Data Centre, Via Galileo Galilei, I-00044 Frascati, Italy
+\and Instituto de Astrof\'{\i}sica de Andaluc\'{\i}a (IAA-CSIC), Glorieta de la Astronom\'{\i}a s/n, E-18008, Granada, Spain
+\and Institute of Experimental and Applied Physics, Czech Technical University in Prague, Horska 3a/22, 128 00 Prague 2, Czech Republic
+\and APC, Univ. Paris Diderot, CNRS/IN2P3, CEA/Irfu, Obs. de Paris, Sorbonne Paris Cite, France 
+\and Faculty of Mathematics and Physics, University of Ljubljana, Jadranska ulica 19, 1000 Ljubljana, Slovenia
+\and Department of Physics, University of Warwick, Coventry CV4 7AL, UK
+\and Department of Particle Physics \& Astrophysics, Weizmann Institute of Science, Rehovot 76100, Israel.
+\and INAF, Osservatorio Astronomico di Trieste, via G.B. Tiepolo 11, 34143 Trieste, Italy.
+\and European Southern Observatory, Karl-Schwarzschild-Strasse 2, 85748 Garching bei M\"unchen, Germany.
+\and Scuola Normale Superiore, Piazza dei Cavalieri 7, 56126 Pisa, Italy.
+\and Unidad Asociada Grupo Ciencias Planetarias (UPV/EHU, IAA-CSIC), Departamento de F\'{\i}sica Aplicada I, E.T.S. Ingenier\'{\i}a, Universidad del Pa\'{\i}s Vasco (UPV/EHU), Alameda de Urquijo s/n, E-48013 Bilbao, Spain.
+\and Ikerbasque, Basque Foundation for Science, Alameda de Urquijo 36-5, E-48008 Bilbao, Spain.
+\and Physics Department, University of Calabria, via P. Bucci, I-87036 Arcavacata di Rende, Italy.
+\and Benoziyo Fellow
+}
+
+\abstract
+{We present data and initial results from VLT/X-shooter emission-line spectroscopy of  {96} GRB-selected galaxies at $0.1<z<3.6$, the largest sample of GRB host spectroscopy available to date. The majority of our GRBs was detected by \textit{Swift} and 76\% are at $0.5<z<2.5$ with a median $z_{\rm{med}}\sim1.6$. Based on Balmer and/or forbidden lines of oxygen, nitrogen and neon, we measure systemic redshifts, star-formation rates (SFR), visual attenuations ($A_V$), oxygen abundances ($\oh$) and emission-line widths ($\sigma$). 
+
+We study GRB hosts up to $z\sim3.5$ and find a strong change of their typical physical properties with redshift. The median SFR of our GRB hosts increases from $\rm{SFR_{med}}\sim0.6$\,\Msunyr\,at $z\sim0.6$ up to $\rm{SFR_{med}}\sim15$\,\Msunyr\,at $z\sim2$. A higher ratio of \oiii/\oii\, at higher redshifts leads to an increasing distance of GRB-selected galaxies to the locus of local galaxies in the BPT diagram. There is weak evidence for a redshift evolution in $A_V$ and $\sigma$, with the highest values seen at $z\sim1.5$ ($A_V$) or $z\sim2$ ($\sigma$). 
+
+ {Oxygen abundances of the galaxies are distributed between $\oh=7.8$ and $\oh=9.0$ with a median $\oh_{\rm{med}}\sim 8.5$. The fraction of GRB-selected galaxies with super-solar metallicities is $\sim 20\%$ at $z<1$ in the adopted metallicity scale.}  This is significantly less than the fraction of star-formation in similar galaxies, illustrating that GRBs are scarce in high-metallicity environments. At $z\sim3$, sensitivity limits us to probing only the most luminous GRB hosts for which we derive metallicities of $Z\lesssim0.5\,Z_{\sun}$. Together with a high incidence of $Z\sim0.5\,Z_{\sun}$ galaxies at $z\sim1.5$, this indicates that the metallicity dependence observed at low redshift will not be dominant at $z\sim3$.
+
+Significant correlations exist between the hosts' physical properties. Oxygen abundance, for example, relates to $A_V$ ($\oh \propto 0.14\cdot A_V$), line width ($\oh \propto\sigma^{0.6}$), and SFR ($\oh\propto\mathrm{SFR}^{0.2}$). In the latter two cases, the normalization of the relations shift to lower metallicities at $z>2$ by $\sim0.4$~dex. 
+
+These properties of GRB hosts and their evolution with redshift can be understood in a cosmological context of star-forming galaxies and a picture in which the GRB host properties at low redshift are influenced by the GRB's preference to occur in metal-poor environments.}
+
+
+\keywords{Gamma-ray burst: general, Galaxies: evolution, Galaxies: high-redshift, Galaxies: star formation}
+\maketitle
+
+\section{Introduction}
+
+The extreme luminosities of long $\gamma$-ray bursts (GRBs) and their afterglows \citep[e.g.,][for recent reviews]{2009ARA&A..47..567G, 2014arXiv1410.0679K} over the full electromagnetic spectrum make them powerful messengers from the early Universe, a potential that was identified very early on \citep[e.g.,][]{1998MNRAS.294L..13W, 2000ApJ...536....1L}. Coupled with the association of long GRBs with core-collapse supernovae of type Ic \citep[e.g.,][]{1998Natur.395..670G, 2003Natur.423..847H, 2006Natur.442.1011P}, and thus the formation of some massive stars, GRBs provide means of studying star-forming galaxies at the highest redshifts \citep[e.g.,][]{2007ApJ...671..272C, 2009ApJ...691..152C, 2012ApJ...754...46T}, faintest luminosities \citep[e.g.,][]{2001ApJ...546..672V, 2012ApJ...749L..38T} as well as the global star-formation rate (SFR) density up to the epoch of re-ionization \citep[e.g.,][]{2009ApJ...705L.104K, 2012ApJ...744...95R, 2012A&A...539A.113E}. In particular the information that is obtained through afterglow spectroscopy provides insights of unprecedented detail into the chemical composition of high-redshift galaxies \citep[e.g.,][]{2006A&A...451L..47F, 2009ApJ...691L..27P, 2013MNRAS.428.3590T}.
+
+GRBs, however, are rare objects \citep[e.g.,][]{2004ApJ...607L..17P, 2007ApJ...657L..73G}. The rate at which GRBs are accurately localized through satellites is around two per week. Number statistics of GRBs are thus orders of magnitude lower than those of other prominent probes of the early Universe, notably Lyman-break galaxies (LBGs, \citealp[e.g.,][]{1996ApJ...462L..17S}), and Damped-Lyman-$\alpha$ Absorbers (DLAs, \citealp[e.g.,][]{2005ARA&A..43..861W}) along the sightline to Quasi-Stellar Objects (QSOs). Quite similarly, the GRB explosion represents a very rare endpoint of stellar evolution, and could thus be subject to environmental factors enhancing or quenching the GRB rate with respect to star-formation. For instance, metallicity often has been discussed as being likely to influence GRBs \citep[e.g.,][]{2006AcA....56..333S, 2008AJ....135.1136M}. Variations in the initial-mass function (IMF) or the fraction of massive stars in tight binaries could also affect the GRB rate \citep[][]{2014ApJ...789...23K}.
+
+A physical understanding of GRBs and the conditions in which they form is thus necessary to put GRBs observations into a cosmological context. Arguably, one of the key pieces to the puzzle of understanding GRB progenitors and their role in probing distant star-formation lies in the nature of their host galaxies \citep[e.g.,][for a review]{2014PASP..126....1L}. 
+
+Seminal sample studies \citep[e.g.,][]{2003A&A...400..499L, 2004A&A...425..913C, 2004MNRAS.352.1073T, 2010AJ....139..694L} culminating in the compilation of GRB host properties of \citet{2009ApJ...691..182S} revealed a population of low-luminosity, low-mass, star-forming galaxies at $z\lesssim1$. The host's UV emission is highly concentrated around the GRB position, and the morphologies appear more irregular than the hosts of core-collapse supernovae \citep{2006Natur.441..463F, 2010MNRAS.405...57S}. 
+
+In line with this picture were Ly$\alpha$ properties \citep{2003A&A...406L..63F, 2012ApJ...756...25M} and early measurements of sub-solar GRB host metallicities \citep[e.g.,][]{2004ApJ...611..200P, 2005A&A...444..711G, 2005NewA...11..103S}. These data supported a strong dependence of GRB formation with metallicity \citep[e.g.,][]{2005A&A...443..581H, 2006A&A...460..199Y} as would be theoretically expected in the collapsar model \citep{1993ApJ...405..273W, 1999ApJ...524..262M}. 
+
+More recently, however, this previously quite uniform picture of GRB hosts became somewhat more diverse: the offset of GRB-selected galaxies towards lower metallicities in the mass-metallicity relation \citep{2010AJ....140.1557L} could, for example, be partially explained with the dependence of the metallicity of star-forming galaxies on SFR \citep[e.g.,][]{2011MNRAS.414.1263M, 2011ApJ...735L...8K}. Additionally, several metal-rich GRB hosts were discovered \citep{2010ApJ...712L..26L, 2013A&A...556A..23E}, and extensive observation in multi-band photometry revealed a population of red, high-mass, high-luminosity hosts, mostly associated with dust-extinguished afterglows \citep{2011A&A...534A.108K, 2012A&A...545A..77R, 2012ApJ...756..187H, 2013ApJ...778..128P}. Similar GRBs were underrepresented in previous studies, illustrating the need for dust-independent, X-ray-selected samples such as The Optically Unbiased GRB Host survey \citep[TOUGH,][]{2012ApJ...756..187H} or the \textit{Swift} GRB Host Galaxy Legacy Survey \citep[SHOALS,][]{2015arXiv150402482P}.
+
+Due to these inherent uncertainties from sample selection and small number statistics, the question of how directly GRBs trace star-formation, and how representatively they select star-forming galaxies remains a matter of debate \citep[e.g.,][]{2012ApJ...755...85M, 2014arXiv1409.7064V, 2015arXiv150304246S}: a metal-dependence on the GRB selection is shown by e.g., \citet{2013ApJ...774..119G} and \citet{2013ApJ...778..128P}, while \citet{2014A&A...565A.112H} advocate no strong evidence for GRBs to provide a biased census of star-formation.
+ 
+Elucidating the tight connection between star-formation and GRBs also holds the promise of shedding more light on the nature of star-forming galaxies in general, especially at faint luminosities as well as their evolution at high redshift. Detailed spectroscopic observation of GRB hosts, however, remained challenging, in particular at $z>1$: prominent tracers of the physical conditions in the hot gas are redshifted into the NIR where spectroscopy traditionally is much less efficient. Spectroscopic data for $z > 1$ GRB hosts from emission lines is available for only a handful of cases \citep[e.g.,][]{2012MNRAS.419.3039C, 2014arXiv1409.6315F, 2015Silviasubm}, and even at $z < 1$ the largest samples \citep{2009ApJ...691..182S, 2010AJ....139..694L, 2013ApJ...774..119G} contain only 10-15 events with detailed information on the host's gas properties.
+
+Here, we present initial results from the VLT/X-shooter emission-line spectroscopy of 96 GRB-selected galaxies in the redshift range $0.1<z<3.6$, with the bulk of the targets (76\%) between $0.5<z<2.5$. X-shooter is a medium-resolution, cross-dispersed echelle spectrograph mounted at the Very Large Telescope \citep{2011A&A...536A.105V} and sensitive from the atmospheric UV-cutoff ($\sim 3000\AA$) up to the $K$-band. In this work, we focus on strong recombination and nebular lines such as the Balmer series and the forbidden transitions of \oii\, or \oiii. The Ly$\alpha$ emission properties of the sample, a stacking analysis and photometric follow-up observations will be discussed in detail elsewhere. 
+
+Throughout the paper, we report line fluxes in units of $10^{-17}\,$\erg, magnitudes in the AB system, wavelengths and redshifts in vacuum and a heliocentric reference frame, and errors at 1$\sigma$ confidence levels. We assume concordance cosmology \citep[][$\Omega_{\rm{m}}=0.315$, $\Omega_\Lambda=0.685$, $H_0=67.3\,\rm{km}\,s^{-1}\, Mpc^{-1}$]{2014A&A...571A..16P} and a solar oxygen abundance of $\oh=8.69$ \citep{2009ARA&A..47..481A}.
+
+\section{Sample and observations}
+\input{tables/xsobs.tex}
+
+\subsection{Targets and observations}
+\label{sec:tarob}
+
+\begin{figure}
+\includegraphics[angle=0, width=0.99\columnwidth]{Figs/Brightness.pdf}
+\caption{Brightness and redshift distribution of the galaxies in our sample. Magnitudes are primarily measured in the $R/r$ filter (94\% of the sample). For the remaining hosts, $V$ or $I/i$-band magnitudes are shown. {Upper limits come from events for which the spectral continuum was dominated by a bright afterglow, they are denoted by downward triangles and are not included in the brightness histogram. Galaxies that hosted dusty GRBs (sightline $A^{\rm{GRB}}_V>1\,\rm{mag}$) are indicated by red stars and red-filled histograms.}}
+\label{fig:brightness}
+\end{figure}
+
+ {To assemble our target list, we rely heavily on previous catalogs, in particular TOUGH, BAT6 \citep{2012ApJ...749...68S}, from GROND \citep{2011A&A...526A..30G, 2011A&A...534A.108K} and SHOALS} for which we retrieve X-shooter optical/NIR spectroscopy from the ESO archive (PIs: de Ugarte Postigo, Flores, Fynbo, Kaper, Kr\"uhler, Malesani, Piranomonte, Rossi, Schady, Schulze). In addition, we also use GRB afterglow observations (PI: Fynbo) obtained with X-shooter in target-of-opportunity mode. 
+
+We immediately removed events from the analysis that belong to the class of short GRBs such as GRB~130603B \citep[e.g.,][]{2014A&A...563A..62D}. We include the host of GRB~100816A even though it cannot be uniquely attributed to either long or short category \citep{2010GCNR..300....1O}. To maintain a clean sample selected through genuinely long GRBs, this borderline case is not used in the discussion of galaxy properties in Sect.~\ref{sec:prop}. GRB~100316D at $z=0.0592$ \citep[e.g.,][]{2011MNRAS.411.2792S, 2012ApJ...753...67B} is the closest GRB in the sample. Because the X-shooter slit covers only a small fraction of the host light, we cannot infer galaxy-integrated properties. We therefore also omit the GRB~100316D host galaxy in Sect.~\ref{sec:prop}.
+
+After an initial reduction and screening of the afterglow or host spectra, we excluded those events for which neither emission lines nor the stellar continuum of the host is detected: in the absence of a robust systemic redshift or in the presence of a very bright afterglow, no meaningful limits on emission-line fluxes can be established.  {We removed a total of nine host spectra from the sample in this step, primarily targeting very faint galaxies with $R\gtrsim25.5\,\rm{mag}$ (GRBs 050406, 060923A, 060923C, 060919, 090926A, 101219B, 110709B). Two excluded spectra are likely those of foreground objects (i.e., misidentifications, GRBs 070808, 081210). Out of these nine host spectra, two have accurate afterglow redshifts (GRBs~090926A at $z=2.11$, 101219B at $z=0.55$). GRB~060923A has a photo-$z$ of $z\sim2.6$ \citep{2008MNRAS.388.1743T, 2013ApJ...778..128P}.}
+
+The total number of GRB host galaxy spectra presented here is 96, and nebular lines are detected for 91 of them. This sample advances in two crucial aspects from previous works: For the first time, it extends significantly beyond redshift of order unity due to the sensitivity of X-shooter up to $2.5\,\rm{\mu m}$. Our observations thus cover prominent tracers (\ha\,and \nii) of the ionized gas up to $z\sim2.5$, and \oii, \hb\, and \oiii\, up to $z\sim3.5$. And secondly, number statistics are approximately a factor five larger than in previous spectroscopic samples. A log summarizing the X-shooter observations is provided in Table~\ref{tab:xsobs}.
+
+\subsection{The sample}
+
+The presented X-shooter observations were selected from the ESO archive, obtained by several groups and programs over the course of several years (2009-2015), and are hence diverse. They can however be divided into two main sub-categories: 
+
+First, dedicated host spectroscopy, which aims on either measuring redshifts of GRBs for sample studies \citep[e.g.,][]{2012ApJ...758...46K, 2012ApJ...749...68S} or the physical properties of individual GRB hosts \citep[e.g.,][]{2011A&A...535A.127V, 2012A&A...546A...8K}. Second, we also discuss GRB afterglow observations in which host emission lines are detected above the afterglow continuum. 
+
+Our GRB hosts are faint (21\,mag\,$\lesssim R\lesssim 26$\,mag with only a few exceptions) and their redshift distribution is broad extending up to $z\sim3.5$. It has a median of $z_{\rm{med}}=1.56$ and 35\% of the targets are at $0.5<z<1.5$, and another 41\% between $1.5<z<2.5$ (Fig.~\ref{fig:brightness}). {It is hence shifted significantly towards lower redshifts when compared against GRB (afterglow) redshift distributions \citep[][]{2011A&A...526A..30G, 2012ApJ...752...62J, 2012ApJ...749...68S, 2015arXiv150402482P}, an obvious result of a selection bias favoring $z<3.5$ galaxies for host spectroscopy. The brightness distribution of the galaxies peaks at around $R\sim25\,$mag with a median value of $R_{\rm med}\sim24.3\,\rm{mag}$. The basic properties of our galaxy sample, optical brightness and redshift are shown in Fig.~\ref{fig:brightness}.}
+
+\subsection{Selection Effects}
+\label{sec:seleffects}
+
+\begin{figure}
+\includegraphics[angle=0, width=0.99\columnwidth]{Figs/Bdist.pdf}
+\caption{Comparison of the cumulative brightness distributions of the host of our X-shooter emission-line spectroscopy (XES) in blue against representative GRB host samples in black and olive lines \citep{2012ApJ...756..187H, 2014arXiv1409.7064V}. In the top left of each panel, we show the K.S.-test $p$-value to reject the null-hypothesis, that both samples are drawn from a similar parent distribution.}
+\label{fig:selection}
+\end{figure}
+
+ {Galaxy samples obtained from GRBs are different than those from flux-limited surveys. Because the galaxy is localized by an external high-energy trigger -- the GRB and its afterglow -- the selection is initially independent of the galaxies dust content, brightness or SFR. If we would study the hosts of all (or a representative subset of) GRBs, we could examine their properties irrespective of any flux limit.}
+
+ {As we, however, heterogeneously draw our GRBs from a larger parent sample of \textit{Swift} GRBs, it is important to test how representative our GRB hosts really are. This implies understanding the selection effects on the GRBs itself as well as those introduced through the follow-up observations. Dedicated spectroscopic host observations favor, for example, optically-brighter galaxies on average: a precise slit alignment requires a prior detection via broad-band imaging (Sect.~\ref{sec:bdist}).}
+
+A further critical parameter is the amount of visual attenuation by dust along the GRB sight-line $A^{\rm{GRB}}_V$ \citep{2011A&A...534A.108K, 2012ApJ...756..187H, 2013ApJ...778..128P, 2015ApJ...801..102P} because it correlates with host properties -- galaxies hosting dusty\footnote{We prefer to use \textit{dusty} GRBs instead of \textit{dark} GRBs. The definition of a dark GRBs is not unique \citep{2004ApJ...617L..21J, 2009ApJ...699.1087V}, depends on the physics of the GRB shockwave and on the time and filter when the observations are performed \citep{2011A&A...526A..30G}. The dust column density along the GRB sight line  $A^{\rm{GRB}}_V$ is thus a much more physical quantity than the optical darkness of a GRB afterglow.} GRBs have an order or magnitude higher stellar mass, luminosity, and SFR. 
+
+The presence of GRBs with suppressed optical afterglows \citep[e.g.,][]{1998ApJ...493L..27G, 2006ApJ...647..471L} constituted a significant uncertainty in previous studies because they were underrepresented in redshift distributions (e.g., Fig.~9 in \citealp{2012ApJ...756..187H}). As X-shooter is extremely efficient in providing galaxy redshifts \citep{2012ApJ...758...46K}, there is an above average fraction of dusty ($A^{\rm{GRB}}_V>1\,\rm{mag}$) GRBs in this work: it is $35\pm5\,\%$  here, but 20\,\% to 30\,\% in unbiased GRB samples \citep{2011A&A...526A..30G, 2012MNRAS.421.1265M, 2014arXiv1412.6530L} in a similar redshift range (Sect.~\ref{sec:dusty}).
+
+\subsubsection{Absolute statistics}
+\label{sec:absstat}
+
+{First, we examine absolute number statistics at $z<1$, where the sample of GRBs with redshifts is highly complete\footnote{Because of the exquisite X-ray positions from \textit{Swift} and extensive follow-up efforts from the ground with e.g., TOUGH, GROND or SHOALS, low-redshift GRBs are very unlikely to be missed if they have favorable observing conditions.}. In total, we have targeted $\sim$50\% (32) of all $z<1$ GRBs in the \textit{Swift}-era. The remaining 50\% were either too northern, too close to the Galactic plane, or not observable because of technical or telescope time limitations. From the initially targeted 32 galaxies at $z<1$, we detect emission lines for 30 (94 \%). The only two non-detections are GRB~110715A ($z=0.82$), which spectrum was dominated by a $R=18.5\,\rm{mag}$ afterglow \citep{2011GCN..12164...1P}, and GRB~101219B at $z=0.55$ \citep{2011ApJ...735L..24S}.}
+
+\subsubsection{Brightness distributions}
+\label{sec:bdist}
+
+ {To test whether the pre-imaging introduces biases towards optically-bright hosts, we compare the distribution of $R$-band magnitudes (Fig.~\ref{fig:brightness}) with those of two representative\footnote{\textit{Representative}, or \textit{unbiased}, samples fully exploit the advantages of the high-energy selection by GRBs. Because they are based on criteria that are not connected to the burst's physical environment, they do not depend on dust obscuration or galaxy luminosity. They allow us to study afterglows or hosts in a truly representative manner.} and redshift-complete samples \citep{2012ApJ...756..187H, 2014arXiv1409.7064V} which we use as a control group.}
+ 
+ {Figure~\ref{fig:selection} shows the respective cumulative brightness distributions in four redshifts intervals. At low redshift ($z<2$), a K.S.-test returns no strong evidence that both samples draw from different parent distributions (K.S.-test $p$-values of 0.87 and 0.50 at $z<1$ and $1<z<2$, respectively) -- except possibly a $\sim$20\% fraction of very faint hosts in TOUGH at $1<z<2$ that is not present here. Above $z \sim 2$, however, a selection effect is clearly evident: our galaxies are substantially brighter than the reference sample (K.S.-test $p$-values of $p=0.96$ and $p=0.996$ at $2<z<3$ and $3<z<3.8$, respectively).}
+
+\subsubsection{The Fraction of Dusty GRBs}
+\label{sec:dusty}
+
+\begin{figure}
+\includegraphics[angle=0, width=0.99\columnwidth]{Figs/DustyFrac.pdf}
+\caption{Red-shift dependent fractions with errors of dusty afterglows from our X-shooter emission-line spectroscopy (XES) in blue against representative GRB samples in black \citep{2011A&A...526A..30G, 2013MNRAS.432.1231C}.}
+\label{fig:dustyfrac}
+\end{figure}
+
+{Our $z<2$ galaxies therefore have a similar brightness distribution as unbiased GRB host samples. The over-proportionality of galaxies with dust-reddened afterglows in the sample, however, could nevertheless have an impact on their physical parameters.}
+
+ {As representative comparison sample of the dust content towards GRBs ($A^{\rm{GRB}}_V$), we avail of the union of the afterglows from \citet{2011A&A...526A..30G} and \citet{2013MNRAS.432.1231C}. After excluding duplicates, and limiting the samples to the same redshifts as the host spectroscopy ($z<3.6$), 75 GRBs remain to constrain the fraction of dusty ($A^{\rm{GRB}}_V>1\,\rm{mag}$) GRBs.} {Figure~\ref{fig:dustyfrac} compares these values with those of our GRBs\footnote{As taken from the literature \citep{2009ApJ...693.1484C, 2011A&A...534A.108K, 2015arXiv150402482P} or derived from our own afterglow data. We assign GRBs to dusty afterglows in case we can constrain $A^{\rm{GRB}}_V>1\,\rm{mag}$ or when the optical/NIR afterglow is significantly under-luminous with respect to the X-ray data. For example, GRB~120119A is dusty, although it had a bright optical counterpart \citep{2014MNRAS.440.1810M}, but GRB~100606A is normal (not-dusty), even though it did not \citep{2010GCN..10835...1N}.}} 
+
+ {The ratio of dusty-to-normal afterglows is somewhat higher at $z\sim2$ than at $z<1$ (Figure~\ref{fig:dustyfrac}). Also, our sample has a slightly higher fraction of dusty afterglows at all redshifts than uniform GRB control samples. The data from galaxies selected through dusty GRBs are highlighted by stars in the following plots to illustrate their influence on correlations and GRB host evolution.}
+
+\subsection{A Stochastic Analysis}
+\label{sec:statana}
+
+ {To correct for the over-proportionality of dusty GRBs, we statistically create samples that have a correct fraction of dusty-to-normal afterglows as follows: We use the initial 96 hosts and randomly draw $10^6$ sub-samples while using the previously-established dusty GRB fraction as a strict prior. Specifically, this means applying a redshift-dependent probability to prevent a galaxy which hosted a dusty GRB to enter in sub-samples.}
+ 
+ {The remaining analysis in this paper is performed with all $10^{6}$ sub-samples where each is a random representation of the input catalog but with a correct proportionality between dusty and normal GRBs. Nebular line fluxes are described by a Gaussian probability distribution with mean and standard deviation given by the raw measurement and error. Because the likelihood of keeping dusty GRBs has an error itself, we propagate thereby not only the statistical uncertainty due to sample size and the measurement error, but implicitly also the uncertainty in the prior, i.e., the dusty GRB fraction ($28\pm8\,\%$ at $2<z<3$, for example).}
+
+ {The result of this procedure are $10^{6}$ different distributions of host parameters, correlations and best-fit values. In the following, we provide the median of the a-posteriori probability and the 1$\sigma$-equivalent region as error to represent the distribution of the respective parameters.}
+
+ {Whenever we study GRB host parameters, we will plot two data sets: First, the more meaningful distribution restricted to $z<2$ (Sect.~\ref{sec:bdist}) and derived from the stochastic sample including error-bars always in blue. Second, we will also show the histogram of all measured values in black to illustrate the impact of the sample cuts. At $z>2$, we show the resulting parameters and distributions (without error-regions) as reference. The selection effect towards optically bright galaxies at $z>2$, however, will often prevent us from deriving robust conclusions in this redshift range.}
+
+\subsection{Misidentification of Hosts}
+
+\begin{figure}
+\includegraphics[angle=0, width=0.99\columnwidth]{Figs/Misidentifications.pdf}
+\caption{Probability distribution of chance coincidence, or the likelihood of having a given number of galaxies in the total sample wrongly associated with the GRB. The probability that we have misidentified a total of 2 out of 96 galaxies is, for example, 30\%.}
+\label{fig:misid}
+\end{figure}
+
+We use standard procedures \citep{2002AJ....123.1111B, 2009AJ....138.1690P} to assign galaxies to GRBs by using the afterglow position with the highest accuracy available. A crucial basis of this work are accurate GRB positions which are routinely available only since the launch of \textit{Swift} \citep{2004ApJ...611.1005G, 2005SSRv..120..165B}. 
+
+In the best cases  {(16 of 96 GRBs)}, an afterglow redshift is set by fine-structure lines \citep[e.g.,][]{2007A&A...468...83V}, and a matching emission line redshift as well as a sub-arcsecond error-circle leave hardly any room for ambiguity.  {In total, 73 of the GRBs have localizations with an accuracy of around 0\farc{5} through radio, optical or \textit{Chandra} X-ray afterglow observations.}
+
+In the remaining cases  {(23 of 96 GRBs)}, the host association relies on the X-ray position from \textit{Swift} which constrains the GRB position to a circle with $\sim$1\farc{5} radius at 90\% confidence. The probability of misidentification, i.e., the galaxy that we study is not related to the GRB of interest is then a function of positional accuracy, galaxy brightness and density of galaxies for the given galaxy type, brightness and coordinates \citep[e.g.,][]{2014A&A...572A..47R}. For average values of galaxy densities in empty fields \citep{2004AJ....127..180C, 2006ApJS..162....1G}, positional errors of 1\farc{5} and galaxy brightnesses of $r\sim25$th magnitude, the chance of finding a random galaxy in the error circle is around 1-2\%. 
+
+To quantify the total number of chance coincidences, or misidentifications in the full sample,  {we use the GRB host brightnesses from Fig.~\ref{fig:brightness} to assess how many similarly bright field galaxies \citep{2004AJ....127..180C, 2006ApJS..162....1G} are statistically expected within an area corresponding to the GRB's localization accuracy. After excluding those events for which the afterglow fine-structure/host redshift match, we calculate the probabilities for a given number of misidentifications through a Monte-Carlo method with $10^{6}$ trials. The resulting distribution is shown in Fig.~\ref{fig:misid}, and has a peak at around 1-2 events, with a tail out to a total of 5 misidentified galaxies. Very few field galaxies are thus interloping in our GRB host sample and their impact on the main conclusions will be limited.}
+
+\section{X-shooter Optical/NIR Spectroscopy}
+\label{xs}
+
+X-shooter operates in three dichroic-separated arms simultaneously: the ultra-violet, blue (UVB, 3000\,\AA\,-5600\,\AA), the visual (VIS, 5500\,\AA\,-10020\,\AA) and the near-infrared (NIR, 10000\AA\,\,-24800\,\AA) arm. Each of the three arms has its own slit, echelle grating, cross-disperser and detector, and we refer to \citet{2011A&A...536A.105V} for a detailed description of the instrument. The resolving power of X-shooter depends on the arm and slit width and is typically between $R=4000$ and $R=10000$ for the used setups\footnote{https://www.eso.org/sci/facilities/paranal/instruments/\\xshooter/inst.html}. Unless dictated by other observational constraints such as nearby bright objects, the observations were obtained in a nodding pattern in multiples of an ABBA sequence. The nod-length is constrained by the short slit-length of X-shooter (11\farc{0}) and is usually 5\farc{0}. 
+
+Whenever possible, slit loss due to atmospheric dispersion was minimized by observing at the parallactic angle and at minimum airmass. A large subset of the host observations were obtained before X-shooter's ADC failure in August 2012 and most of the emission lines are located in the NIR part of the spectrum (e.g., the bluest of the lines of interest (\oii) is already above 10000\,\AA\,at $z>1.5$) where atmospheric dispersion is less severe. The lack of ADCs was not a primary concern in the analysis.
+
+\subsection{Data reduction}
+
+The basis of the data reduction was the X-shooter pipeline supplied by ESO in its version \texttt{2.2.0} or higher \citep{2006SPIE.6269E..80G, 2010SPIE.7737E..56M}, which we used for flat-fielding, order tracing, rectification and initial wavelength calibration and flexure compensation via arc-lamp frames (also Sect.~\ref{sec:wavecal}). These steps were applied to the individual frames of the individual arms of each set of spectra. During rectification, we chose a dispersion of 0.4\,\AA\,/px\,(UVB/VIS arm) and 0.6\,\AA\,/px\,(NIR arm). This minimizes correlated noise, while at the same time maintaining sufficient sampling for emission lines down to a velocity dispersion $\sigma$ of $\sim20\,$\kms. 
+
+We use our own software and algorithms for bad-pixel and cosmic-ray detection, as well as sky-subtraction and shifting and adding. We further corrected the inter-order background for an apparent problem in the X-shooter pipeline. In the UVB and VIS arm, we estimate the sky background locally in a small region around the spectral trace. For the NIR data with its abundant and strong sky-lines as well as high background, the frames for each set of observation are grouped in pairs of two such that they were taken in a different sky-position but as close in time as possible. Each two frames were then subtracted from each other for the background estimation.
+
+A typical observation (Table~\ref{tab:xsobs}) consisting of four exposures in the UVB/VIS, and twelve in the NIR arm leads to four and six sky-subtracted, rectified, wavelength and flux-calibrated (Sect.~\ref{FluxCal}) frames in the UVB/VIS and NIR arm, respectively. These single frames are then averaged using a weight function from the variance or the signal-to-noise ratio (S/N). Previously-detected bad-pixels and cosmic-rays are masked in the stacking process.
+
+From the combined two-dimensional frame we then optimally extract the one-dimensional spectrum. The weight function of the extraction is derived using the collapsed profile of either the emission lines themselves or the spectral continuum in case it is detected at a sufficient S/N level.
+
+\subsection{Wavelength calibration}
+\label{sec:wavecal}
+
+X-shooter is mounted on the VLT Cassegrain focus, so it suffers from instrument flexures and misalignments of the wavelength solution between day-time calibration and night-time science observations. We correct for these flexures first by using the ESO pipeline and frames supplied by X-shooter's active flexure compensation. In a second step, we use a theoretical emission spectrum of the Paranal sky \citep{2012A&A...543A..92N}. In the VIS and NIR arm, we divide the spectrum in 10-15 slices, and cross-correlate the observed and theoretical sky-spectrum. This provides wavelength offsets averaged over the respective wavelength interval. A low-order polynomial was then fitted to the data, and the respective wavelength offset as derived from the fit was applied to the wavelength scale. Typical offsets are smaller than around 0.4\,\AA\,\ in the NIR arm and $<0.1$\AA\, in the UVB/VIS. Because of the lack of strong sky features in the UVB arm bluewards of 5000\,\AA, we apply only a constant offset to the wavelength scale in the UVB arm.
+
+\subsection{Flux calibration}
+\label{FluxCal}
+
+Correct flux scales of the emission line spectra are fundamental because they have a strong impact on the measurement of global galaxy characteristics. We first flux-calibrated each of the individual spectra with the nightly standard star taken with a slit-width of 5\farc{0}. Standard stars are different for each observation, and the full set is given at the ESO webpages\footnote{http://www.eso.org/sci/facilities/paranal/instruments\\/xshooter/tools/specphot\_list.html}. The resulting response curves were thoroughly validated against each other. To limit the effect of a time-dependent illumination by a time-varying flat-field lamp, particularly evident in the red part of the NIR arm, we used the same flat for science and standard frames to correct for pixel-to-pixel variations.
+
+Even with a well-defined instrumental response, the finite slit width of the galaxy spectroscopy inevitably leads to slit-loss. Slit-loss depends primarily on the ratio between slit-width and the convolution of the point-spread function delivered by the telescope with the spatial extent of the sources on the sky. In addition, the sky transparency varied significantly during the course of some of the observations due to clouds, leading to an additional decrease in flux as compared to the standard star observation.
+
+Accurate broadband photometry, however, is available to us providing means to estimate galaxy-integrated line-fluxes. The ratio between photometry and a synthetic brightness of the spectrum integrated over the band-pass of the respective filter yields a scale factor to estimate slit-loss (which we call $\tau$). In the ideal case, we have multiple independent photometric bands in each of X-shooter's arms to corroborate and check the intra- and inter-arm flux calibration. For many hosts, this is not the case and we assume that $\tau$ is constant in each arm. We then multiply the line flux by $\tau$ and propagate errors accordingly. $\tau$ is in the range between 1 and 3, and its distribution has a median and 1$\sigma$ bounds of $\tau_{\rm {med}} = 1.6_{-0.5}^{+0.7}$. 
+
+Deriving $\tau$ for the individual arms is only possible for a bright continuum ($r<23$\,mag), i.e., luminous hosts or afterglows. For most of the fainter hosts ($r\sim25-26$\,mag), the continuum is detected in the bluer arms only leading to relatively large errors in $\tau$ and the line fluxes. In cases where no continuum is detected, or no comparison photometry is available in the given arm, we assume that $\tau$ is similar between all arms. In those cases, where we can measure $\tau$ for different arms or wavelengths, it is consistent within errors. This provides confidence that the scaling procedure is reliable within the quoted error bars.
+
+Errors in $\tau$ come from the photon noise of the spectral continuum, the accuracy of the comparison photometry and the scatter of different filters in each arm if available. Line ratios of adjacent lines (such as \ha\,and \nii\,or the \oiii\,doublet and \hb) and the physical properties that they are proxies for, have the same scaling factor in all cases. We associate the line-flux error from photon statistics with a statistical error, and the one derived from the scaling factor to a systematic one, and provide full details of both errors in the line-flux tables (Tables~\ref{tab:balmerlines} and \ref{tab:forbiddenlines}). All fluxes, spectra and photometry are corrected for the Galactic foreground reddening according to \citet{2011ApJ...737..103S} assuming $R_V=3.08$ \citep{1992ApJ...395..130P}.
+
+
+\subsection{Flux limits and sensitivities}
+\label{sec:sens}
+
+To better understand the fundamental properties and constraints of our observations, we look closer at the sensitivity limits. From a typical observational setup with an integration time of $4\times600$\,s, we derive the noise characteristics of the spectrum. Artificial emission lines of \ha\,and the \oii\,doublet at various redshifts with a typical intrinsic line width of $\sigma= 70$\,\kms\, (Sect.~\ref{sec:velo}) are then added to the noise spectrum. 
+
+We record the emission-line flux that would have been detected with a combined significance of at least 6\,$\sigma$ over the noise level in the one-dimensional spectrum. The significance level is set conservatively, because we have no a priori knowledge of the redshift in many cases\footnote{The look-elsewhere effect: It is for example very likely to find 3~$\sigma$ noise peaks in the medium-resolution spectrum of X-shooter just because the parameter space to be searched is so large. If the redshift is known, the locations of the emission lines are fixed, and the probability of finding significant noise peaks by chance in the correct wavelength range drops substantially.}. Line-flux sensitivities for \ha\,and \oii\, are then converted into SFRs using the methods from Sect.~\ref{sec:newsc}.
+
+Figure~\ref{fig:sens} illustrates the redshift dependence of the limiting SFR. At $z<0.5$, \ha\, lies in the visual arm of X-shooter with its sensitive CCD and low sky-background. The limiting SFR is few $10^{-4}$\,\Msunyr at $z\sim0.1$ and increases to $8\cdot10^{-3}$\,\Msunyr at $z\sim0.5$. In the non-extinguished case (solid lines in Fig.~\ref{fig:sens}), the SFR sensitivity stays below 1~\Msunyr\, up to $z\sim1.7$.
+
+Above $z\sim2.5$, the sensitivity to unextinguished SFR is driven by \oii\,and stays at around a few \Msunyr up to $z\sim3.7$ above which it rises beyond 10\,\Msunyr. Adding dust increases these limits considerably, in particular for \oii\, (dashed lines in Fig.~\ref{fig:sens}). 
+
+\begin{figure}
+\includegraphics[angle=0, width=0.99\columnwidth]{Figs/Sensitivities_SFR.pdf}
+\caption{Coloured lines represent the sensitivity for \ha\,and \oii\,converted into a SFR. Solid/dashed lines denote the case of $A_V=0$\,mag and $A_V=2$\,mag, respectively. Black lines indicate redshift ranges where the line is located in windows of negligible atmospheric transmission. Skylines result in high-SFR limits on small scales, but have been omitted to enhance clarity.}
+\label{fig:sens}
+\end{figure}
+
+Noteworthy are redshift ranges where the SF-tracers are located in regions of high-telluric absorption (black lines in the top panel of Fig.~\ref{fig:sens}). In a small window around $z\sim1$, as well as redshift ranges of $1.7<z<2.0$, $2.6<z<3.0$ and $z>3.7$, atmospheric absorption makes the detection of emission lines challenging from the ground. 
+
+\subsection{Auxiliary photometry}
+\label{sec:phot}
+
+For most of the targets the photometry used to flux-calibrate the spectra is either provided by TOUGH \citep{2012ApJ...756..187H}, or the literature as referenced in Table~\ref{tab:xsobs}. If not available elsewhere, dedicated observations were performed with GROND \citep{2008PASP..120..405G} at the 2.2~m MPG telescope on LaSilla, HAWK-I \citep{2008A&A...491..941K}, FORS2 \citep{1998Msngr..94....1A}, LRIS at Keck \citep{1995PASP..107..375O} or ALFOSC at the 2.5~m Nordic Optical Telescope (NOT).
+
+Optical/NIR imaging data were reduced in a standard fashion using dedicated routines in pyraf/IRAF \citep{1993ASPC...52..173T} in the case of GROND, VLT and NOT photometry or IDL for Keck/LRIS. Data reduction and photometry follow the procedures established in \citet{2008ApJ...685..376K} in the former case and is taken from the Keck GRB Host Survey \citep{2013EAS....61..391P} in the latter case. The photometric solution of each field was tied to the SDSS survey for those GRB fields which were covered by SDSS DR8 \citep{2011ApJS..193...29A}, zero-points as derived from the observation of standard stars, or our own set of secondary calibrators in the field. Typically, secondary calibrators were again derived from observing SDSS fields close in time to the GRB observations. 
+
+\section{Analysis and results}
+
+\subsection{Line flux measurements}
+
+\begin{figure*}
+\begin{subfigure}{.33\textwidth}
+  \includegraphics[width=0.999\linewidth]{Figs/Lines/GRB140506A_OII3726_vis_2d.pdf}
+\end{subfigure}
+\begin{subfigure}{.33\textwidth}
+  \includegraphics[width=0.999\linewidth]{Figs/Lines/GRB100424A_NeIII3869_nir_2d.pdf}
+\end{subfigure}
+\begin{subfigure}{.33\textwidth}
+  \includegraphics[width=0.999\linewidth]{Figs/Lines/GRB070129_OIII5007_nir_2d.pdf}
+\end{subfigure}
+\begin{subfigure}{.33\textwidth}
+  \includegraphics[width=0.999\linewidth]{Figs/Lines/GRB051022A_Hbeta_vis_2d.pdf}
+\end{subfigure}
+\begin{subfigure}{.33\textwidth}
+  \includegraphics[width=0.999\linewidth]{Figs/Lines/GRB070110_Halpha_nir_2d.pdf}
+\end{subfigure}
+\begin{subfigure}{.33\textwidth}
+  \includegraphics[width=0.999\linewidth]{Figs/Lines/GRB050416A_NII6584_nir_2d.pdf}
+\end{subfigure}
+\caption{ {Examples of line-flux measurements for nebular lines at different signal-to-noise level. In each panel, the background is the two-dimensional spectrum, where the spatial direction is plotted against the right y-axis. The colour coding is indicated by the colour bar. The one-dimensional spectrum with a Gaussian fit are shown in black points and line. Grey data points are excluded from the fit because of telluric or skyline contamination. A telluric transmission spectrum is plotted in a thin black line at the very top of each panel. From top left to bottom right: \oii\, (GRB~140506A, with afterglow background), \neiii\, (GRB~100424A), \oiii\, (GRB~070129), \hb\, (GRB~051022), \ha\, (GRB~070110), \nii\,(GRB~050416A).}}
+\label{fig:lineexamples}
+\end{figure*}
+
+Fluxes of emission lines were measured by fitting a superposition of Gaussian functions to the data, with the continuum set in small ($\pm40$\,\AA) regions around the wavelength of interest free of emission-, telluric- and sky-lines. In most cases, a single Gaussian and constant continuum describes the line with sufficient accuracy (Fig.~\ref{fig:lineexamples}). We also measured the line-flux through numerical integration, and its result was used in cases where the lines show clear velocity structure.
+
+For weak emission lines such as \neiii\,or \nii, we tied the Gaussian centroid (as set by the galaxy redshift) and the line width to those of strong lines. 
+
+Finally, a synthetic Paranal sky radiance and transmission spectrum \citep{2012A&A...543A..92N} was used to flag regions of high telluric absorption and sky emission, and affected data were automatically discarded from the line fit (Fig.~\ref{fig:lineexamples}). The results of the line flux measurements are given in Tables~\ref{tab:balmerlines} and \ref{tab:forbiddenlines}. 
+
+Many of the emission lines are not detected at high signal-to-noise ratios (S/N). If the spectral range is covered by X-shooter, we decided to quote the actual measurement instead of providing an upper limit to maximize the information on e.g., line ratios under the given photon statistics.
+
+\input{tables/linefluxes.tex}
+\input{tables/forbiddenfluxes.tex}
+
+We have not corrected the Balmer line fluxes for the underlying Balmer stellar absorption even though we note that it can have a measurable influence on the line fluxes and thus the derived physical properties of the emitting gas \citep{2011MNRAS.414.2793W}. The S/N of the emission lines and stellar continuum is not high enough to resolve and fit the absorption component separately. Generally, the Balmer absorption correction is small for galaxies with masses below $10^{10}$\,\Msun. 
+
+At $z\sim0.8$, for example, it has an equivalent width (EW) of 1\,\AA\,for galaxies of $10^{10}$\,\Msun\, at \hb\,\citep{2011ApJ...730..137Z}. The EW of the \ha\, line is high enough $(\rm{EW}_{\rm{rest}} > 20\,\AA)$ to make the correction negligible, but it can have an effect on the other Balmer line-fluxes. We estimate $\lesssim$5\% for \hb\, on average, well below the average statistical error of the line flux measurements (Table~\ref{tab:balmerlines}).
+ 
+In cases where \oiii$\lambda$5007 is not well constrained by the data, but \oiii$\lambda$4959 is, or vice versa, we assume that $f_{[\ion{O}{iii}(\lambda 4959)]} = \nicefrac{1}{3} \cdot f_{[\ion{O}{iii}(\lambda 5007)]}$ \citep{2000MNRAS.312..813S}.
+
+\subsection{Emission-line widths}
+
+We measure the intrinsic emission line-width ($\sigma$) of the hot gas using nebular lines of highest S/N, usually \ha, or \oiii. If the line-shape is adequately represented with a Gaussian function, we use the instrumental resolution $\Delta$V and subtract it quadratically from the fitted FWHM, giving $\sigma$ as $\sigma = \sqrt{\rm{FWHM}^2 - \Delta V^2} / \left(2\sqrt{2\ln 2}\right)$. If the line-shape is clearly asymmetric, we directly measure FWHM in the data. Errors on $\sigma$ are derived via the error-spectrum and propagated accordingly.
+
+The physical line-width is well-resolved through the medium resolution of X-shooter (typically $\Delta V \sim 35\,$\kms\, in the visual arm, or $\Delta V \sim 50\,$\kms\, in the NIR arm). The line-width measurements are provided in Table~\ref{tab:physprop}.
+
+\input{tables/xsprop.tex}
+
+\subsection{New GRB redshifts}
+\label{sec:newzs}
+
+To measure GRB redshifts from host galaxy data (Table~\ref{tab:newz}), we use both the emission lines as detailed in \citet{2012ApJ...758...46K}, spectral breaks in the stellar continuum \citep{2012ApJ...752...62J} as well as standard photo-$z$ techniques in \textit{LePhare} \citep{1999MNRAS.310..540A, 2006A&A...457..841I} from supplementary multi-band photometry. For galaxies with more than one detected emission line, the redshift solution is accurate, unique and robust. For the other, somewhat more ambiguous cases we provide more information in Appendix~\ref{app:newz}. 
+
+In particular, we provide redshifts for six GRBs (GRB~050714B at $z=2.438$, GRB~060306\footnote{The redshift of GRB~060306 has been discussed in \citet{2012ApJ...752...62J} and \citet{2013ApJ...778..128P}, already suggesting $z=1.55$ as the likely redshift based on a VLT/FORS spectrum in the former, and extensive photometry in the latter case. The detection of multiple emission lines unambiguously confirms $z=1.56$ as the correct redshift.} at $z=1.56$\, GRB~060805A\footnote{The association of GRB~060805A is ambiguous because two galaxies are detected in the \textit{Swift} XRT error-circle. Here, we provide the redshift for the fainter object. The brighter object has a redshift of $z=0.603$ \citep{2012ApJ...752...62J}.} at $z=2.363$, GRB~060923B at $z=1.509$, GRB~070224 at $z=1.992$ and GRB~070328 at $z=2.063$) in the TOUGH sample \citep{2012ApJ...756..187H}. This brings the redshift completeness of TOUGH to 87\% (60 out of 69 events), with a median/average redshift of $z_{\rm{med}} = 2.10\pm0.18$ and $z_{\rm{avg}}= 2.20\pm0.17$, respectively. GRB~070328, GRB~070521 ($z=2.087$), GRB~080602 ($z=1.820$) and GRB~090201 $z=2.100$ are part of BAT6, so its completeness is now 97\% (56 out of 58 events) with $z_{\rm{med}} = 1.67\pm0.15$ and $z_{\rm{avg}}= 1.75\pm0.13$.
+
+In addition, we measure or constrain the redshifts of eight GRBs based on emission lines or spectral breaks in the stellar continuum  (Table~\ref{tab:newz}). 
+
+\input{tables/newz.tex}
+
+\subsection{Scaling relations for star-formation rates}
+\label{sec:newsc}
+
+\begin{figure}
+\includegraphics[angle=0, width=0.99\columnwidth]{Figs/Ha_OII.pdf}
+\caption{Scaling relations between emission-line luminosity and SFR. Uncorrected/de-reddened \oii\,luminosity against SFR in the upper and lower panel, respectively. Error-bars in the lower panel are omitted to enhance clarity (typical errors in the top left corner). The colour-coding of the individual measurements corresponds to $A_V$ as indicated by the colour-bar. The solid black lines show the best-fit scaling relations from Equation~\ref{eq:oiiscale}. The grey-shaded area denotes the $1\sigma$ scatter in the relation - 0.45 dex in the upper, and 0.19 dex in the lower panel.}
+\label{fig:haoii}
+\end{figure}
+
+Since \ha, the most reliable tracer of star-formation in the rest-frame optical wavelength range, is not visible in all of the spectra, we use our sample to derive scaling relations between the luminosity of other strong nebular lines and the dust-corrected SFR$_{\rm{H}\alpha}$. To establish the comparison sample, we avail of those galaxies for which both \ha\,and \ebv from the Balmer decrement (Sect.~\ref{sec:av}) can be constrained. We convert the dust-corrected \ha\,luminosity into a SFR based on the widely used \citet{1998ARA&A..36..189K} relation adopting a \citet{2003PASP..115..763C} IMF. This provides us with a reference sample with reddening-corrected SFRs based on \ha.
+
+We then plot other strong emission lines against SFR (e.g., Fig.~\ref{fig:haoii}) and minimize the scatter of the data against scaling relations in the form of $\log(\rm{SFR_{H\alpha}}) = a + b\cdot\log\left(L_{42}\right)$. Here, $10^{a}$ is the SFR in \Msunyr\,for a benchmark line luminosity of $L_{42}=10^{42}$\,erg\,{s}$^{-1}$, while $b$ takes into account a possible evolution between SFR and line flux with galaxy properties. These scaling relations then constrain the SFR for hosts for which other nebular lines than \ha\,are available.
+
+A slope of $b=1$ provides a direct proportionality between e.g., \oii\,luminosity and SFR \citep{1998ARA&A..36..189K, 2009ApJ...691..182S}. $b$ significantly different from unity indicates that the relation between SFR and line flux changes with galaxy properties, for instance metallicities, dust attenuation or ionization \citep[e.g.,][]{2004AJ....127.2002K}. One would thus ideally add a further dependence in the relation based on e.g., metallicity, stellar mass or luminosity for accurate SFRs \citep{2004AJ....127.2002K, 2010MNRAS.405.2594G}. In the absence of further information on the galaxy apart from line flux, however, all the physical changes of the SFR to line-flux relation are implicit in the empirical factor $b$.
+
+\oii\, for example, is strongly correlated with SFR (Figure~\ref{fig:haoii}) and based on  {60 hosts at $0.3 < z < 2.5$} we derive:
+\begin{equation}
+\label{eq:oiiscale}
+\begin{split}
+\log(\rm{SFR_{H\alpha}}) = 1.02 + 1.07\cdot\log\left(L{\oii_{\rm{,uncor,42}}}\right)\\
+\log(\rm{SFR_{H\alpha}}) = 0.63 + 1.03\cdot\log\left(L{\oii_{\rm{,dered,42}}}\right)
+\end{split}
+\end{equation}
+where $L{\oii_{\rm{,uncor,42}}}$, $L{\oii_{\rm{,dered,42}}}$ are the measured and dereddened \oii\,luminosity in units of $10^{42}$\,erg\,{s}$^{-1}$, respectively.  The 1$\sigma$ dispersions in these relations are 0.44~dex for the dust-uncorrected, and 0.19~dex for the dust-corrected luminosity. Even though the scatter is much lower in the latter case, the former is useful in most practical cases. For a reliable dust-correction, the measurement of at least two Balmer lines is required, which in itself provides a much more reliable SFR than through Equation~\ref{eq:oiiscale}. 
+
+ {Figure \ref{fig:haoii} also illustrates the limitation of this procedure. Because \oii($\lambda$3727\,\AA) is strongly attenuated by dust, there is considerable scatter in the relation using the dust-uncorrected luminosity. Even though the calibration sample contains galaxies over nearly full range of metallicity probed by the observations ($8.2 < \oh < 8.9$), the uncorrected Equation~\ref{eq:oiiscale} will significantly under-predict the SFR for metal-rich ($\oh > 8.7$) galaxies because of their high dust content. If a reliable dust-correction is available, the dust-corrected equation~\ref{eq:oiiscale} then provides SFRs with an average dispersion of 0.2~dex over the full metallicity range probed.}
+
+For those cases where no dust correction can be performed, i.e., only one Balmer line is detected in the spectrum, we derive for \ha\, (based on 61 individual galaxies with $8.2 < \oh < 8.9$):
+\begin{equation}
+\log(\rm{SFR_{H\alpha}}) = 0.92 + 1.04\cdot\log\left(L({\rm{H}\alpha_{\rm{,uncor,42}}})\right)
+\end{equation}
+with a dispersion of 0.25 dex. For \hb\, the equivalent relation is:
+\begin{equation}
+\log(\rm{SFR_{H\alpha}}) = 1.47 + 0.98\cdot\log\left(L({\rm{H}\beta_{\rm{,uncor,42}}})\right)
+\end{equation}
+with a scatter of 0.36 dex from 57 galaxies. For the Balmer lines, dust-corrected relations are by construction equivalent to the one of \citet{1998ARA&A..36..189K}.
+
+For the \oiii($\lambda$5007)\,line, the scaling relations are:
+\begin{equation}
+\begin{split}
+\log(\rm{SFR_{H\alpha}}) = 0.98 + 0.81\cdot\log\left(L{\oiii_{\rm{,uncor,42}}}\right)\\
+\log(\rm{SFR_{H\alpha}}) = 0.71 + 0.92\cdot\log\left(L{\oiii_{\rm{,dered,42}}}\right)
+\end{split}
+\end{equation}
+with a dispersion of 0.42~dex for the uncorrected, and 0.28~dex in the dereddened case (from 57 individual galaxies in total).  {The relatively large dispersion, even after removing the effect of dust reddening, illustrates that \oiii\, is the least reliable SF-tracer considered in this study.} In the following, we use the emission-line that yields the smallest uncertainty in SFR when propagating 1$\sigma$ dispersions accordingly when necessary (typically first \ha, then \hb, \oii\, and \oiii\, only if no other emission line is detected).
+
+It is immediately clear that the scaling relations detailed above depend on the distribution of galaxy properties in the reference sample. Or, in other words, we consider these scaling relations most useful and accurate for low-mass, high-redshift star-forming galaxies which have the average colour excess of our sample ($A_V\sim0.8$\,mag or $E_{B-V}\sim0.25$\,mag, Sect.~\ref{sec:av}).
+
+\section{Physical properties of the GRB host population}
+\label{sec:prop}
+
+\subsection{GRB hosts in the BPT diagram}
+
+\begin{figure}
+\includegraphics[angle=0, width=0.99\columnwidth]{Figs/BPT.pdf}
+\caption{Baldwin-Phillips-Terlevich (BPT) classification diagram for GRB hosts. The background sample is the logarithmic space density of local ($z\sim0$) SDSS galaxies with line-fluxes from the MPA/JHU catalog\footnotemark. Colored circles are 34 individual GRB-selected galaxies with redshifts indicated by the colour-bar. The increasingly darker dashed grey lines are the redshift-dependent differentiation lines between star-forming galaxies and AGN of \citet{2013ApJ...774L..10K} at the indicated redshifts. The black solid line is the ridge line, i.e., the line with the highest density of SDSS galaxies. Dusty/normal GRBs are indicated by stars/circles.}
+\label{fig:bpt}
+\end{figure}
+
+\begin{figure}
+\includegraphics[angle=0, width=0.99\columnwidth]{Figs/BPT_dist.pdf}
+\caption{Minimum difference of the GRB hosts from the ridge-line (illustrated by the dots) of $z\sim0$ SDSS star-forming galaxies (top panel). We show \oiii/\hb\, in black and (\oiii+\oii)/\hb\, in red as a function of $z$ in the middle and bottom panel, respectively. In all panels, solid lines denote the most-likely linear regression, with regions of 68\,\% probability in shaded areas. Dusty/normal GRBs are indicated by stars/circles. Error bars are omitted to enhance clarity and replaced by typical errors in the bottom-right corner.}
+\label{fig:bptdist}
+\end{figure}
+
+Figure~\ref{fig:bpt} shows the GRB hosts in the Baldwin-Phillips-Terlevich (BPT) diagram \citep{1981PASP...93....5B} that allows to separate emission-line objects into star-forming galaxies and AGN based on the \nii/\ha\, and \oiii$\lambda$5007/\hb\,ratios \citep[e.g.,][]{2001ApJ...556..121K}. In our sample, 34 GRB hosts have adequate constraints on the four emission-line fluxes to establish their position in the BPT diagram. As we are interested in line-flux ratios, we use here (and in the following whenever line-ratios are important) only the statistical errors from Tables~\ref{tab:balmerlines}~and~\ref{tab:forbiddenlines}.
+
+The redshift range of the GRB hosts extends from $z=0.3$ to $z=2.5$. As a background sample, we plot the logarithmic space density of 330000 local ($z\sim0$) SDSS \citep{2009ApJS..182..543A} galaxies from the MPA-JHU catalogue \citep[e.g.,][]{2003MNRAS.346.1055K}, as well as the redshift-dependent classification lines between AGN and star-forming galaxies as grey dashed lines \citep{2013ApJ...774L..10K}. The ridge line of SDSS galaxies \citep{2008MNRAS.385..769B} is shown in black.
+
+Our GRB hosts occupy a different phase-space than SDSS galaxies in the BPT diagram, because they are mostly above the ridge line which denotes the highest density of local star-forming galaxies. A similar offset is well-observed in many high-$z$ galaxy samples \citep[e.g.,][]{2005ApJ...635.1006S, 2007ApJ...669..776K, 2014ApJ...795..165S} and also for galaxies hosting H-poor super-luminous supernovae \citep{2014arXiv1409.8331L}. This offset is often attributed to harder ionization fields, higher ionization parameters or changes in the ISM properties \citep[e.g.,][]{2008MNRAS.385..769B, 2013ApJ...774..100K, 2014ApJ...795..165S}. 
+
+ {There is some evidence of an evolution of the position of the targets in the BPT diagram with redshift. The top and middle panel of Fig.~\ref{fig:bptdist} show the minimum difference to the SDSS-based ridge line ($\Delta$(\oiii/\hb)) as well as \oiii/\hb. On average $\Delta$(\oiii/\hb) and \oiii/\hb\, increase by $0.11\pm0.02$ and $0.08\pm0.03$ dex per unit redshift. These values are derived as the median of all stochastic samples (Sect.~\ref{sec:statana}) with errors representing the region of 68\,\% likelihood of all trials. The fractions of samples producing no evolution in \oiii\,/\hb, and $\Delta$(\oiii/\hb) are $p=0.015$ and $p=0.0018$, respectively. A rising trend is not seen (bottom panel of Figure~\ref{fig:bptdist}) in the ratio of the summed line flux (\oiii\,+\oii)\,to \hb which stays constant ($0.01\pm0.04$ dex per unit redshift).} 
+
+ {Changes in the metallicity of the nebular gas are unlikely to play the dominant role in the displacement between high-$z$ and local galaxies as this would move galaxies primarily along the ridge line. Photoionization models from \citet{2014ApJ...795..165S}, for example, predict very little contribution from metallicity changes to the observed offset in the BPT diagram. Also, the metallicity distributions of the sample are comparable at $z<1$ and $1<z<2$ (Sect.~\ref{sec:metprop}), indicating that the larger difference of galaxies at higher redshift is not driven by a decreasing gas-phase oxygen abundance.}
+
+ {Our observations are thus consistent with the hypothesis} that the difference in the location in the BPT diagram between GRB hosts and $z\sim0$ star-forming galaxies is caused by an increase in the ionization fraction, i.e., for a given metallicity a larger percentage of the total oxygen abundance is present in higher ionization states at higher redshifts. This could be caused by a harder ionization field originating for example from hot O-type stars \citep{2014ApJ...795..165S} that emit a large number of photons capable of ionizing oxygen into \oiii. 
+
+
+\footnotetext{http://www.mpa-garching.mpg.de/SDSS}
+
+\subsection{Ionization evolution}
+
+\begin{figure}
+\includegraphics[angle=0, width=0.99\columnwidth]{Figs/OIIOIII.pdf}
+\caption{\oiii/\oii\, as a function of (from top to bottom): redshift, galaxy $A_V$ and SFR. The colour of individual data points are according to the colour-bars. In all panels, solid lines denote the most-likely linear regression, with regions of 68\,\% probability in shaded areas. Dusty/normal GRBs are indicated by stars/circles.}
+\label{fig:ionization}
+\end{figure}
+
+The ratio of \oiii/\oii, which we plot in Fig.~\ref{fig:ionization} against redshift, $A_V$ and SFR, is often used as a proxy for the ionization parameter. A rising \oiii/\oii\, ratio with redshift is evident from  {79 events with adequate wavelength coverage to constrain both \oiii\,and \oii}. \oiii/\oii\, increases from 0.9 at $z\sim0.3$ by a factor of 3 to $\sim3$ at $z\sim3.3$.  {The fraction of iterations returning no correlation between the \oiii/\oii\, ratio and redshift is $p=0.0018$ for the full sample and $p=0.0039$ when restricting the redshift range to $z < 2.7$}. 
+
+The predicted \oiii/\oii\,ratio at $z=3.3$ is remarkably similar to the ratio of the composite LBG spectrum at $z\sim3.5$ \citep{2008A&A...488..463M, 2014A&A...563A..58T}. The evolution in the \oiii/\oii\, is again unlikely to be caused by metallicity effects (lower metallicity galaxies have higher \oiii/\oii\, ratios), because there is no statistically significant difference seen in metallicity between the $z<1$ and $1<z<2$ sample (Sect.~\ref{sec:met}).
+
+Even though both the ionization parameter and SFR are correlated with redshift, the bottom panel in Fig.~\ref{fig:ionization} shows no obvious relation between \oiii/\oii\, and SFR (Sect.~\ref{sec:sfr}). It does show (middle panel in Fig.~\ref{fig:ionization}) an anti-correlation with dust content {($A_V = 0.35 - 0.90\cdot\log\left(\oiii/\oii\right)$, with $p=0.037$)}. The dust content\footnote{Here, and in the following, $E_{B-V}$ or $A_V$ always refers to the rest-frame colour excess/visual attenuation at the redshift of the target galaxy.} as parametrized through a colour-excess $E_{B-V}$ or visual attenuation $A_V$ of a galaxy (Sect.~\ref{sec:av}) correlates with stellar mass $M_{\star}$, where $A_V=1$\,mag corresponds roughly to $M_{\star}\sim10^{10}$\,\Msun\,\citep[e.g.,][]{2014ApJ...792...75Z}. 
+
+The \oiii/\oii\, ratio thus increases with redshift, whereas it decreases with $A_V$ (or stellar mass), plausibly an effect of the efficient absorption of ionizing photons on dust. The net effect makes \oiii/\oii\, independent of SFR in our sample.
+
+\subsection{Dust properties - Distribution and redshift evolution of Galaxy $A_V$}
+\label{sec:av}
+
+\begin{figure}
+\includegraphics[angle=0, width=0.99\columnwidth]{Figs/EBV_histogram.pdf}
+\caption{The blue-solid histogram and error-bars in the top panel shows the $A_V$ distribution for $z < 2$ GRB from the statistical analysis (Sect.~\ref{sec:dusty} and Sect.~\ref{sec:statana}). The black histogram represents all raw measurements without corrections. The lower panel shows the cumulative distribution of $A_V$ and its uncertainty from $z<1$ hosts (dark-blue) and $1<z<2$ hosts (olive). The red-dashed line shows $z>2$ hosts (error-region not shown).}
+\label{fig:ebvhist}
+\end{figure}
+
+We measure the rest-frame attenuation of light from dust through comparing the observed Balmer decrement $r_{\rm{obs}}$ with the theoretical expectation $r_{\rm{theo}}$ for a given electron temperature. To exploit the broad wavelength coverage and detection of more than two Balmer lines, we simultaneously minimize the various expected ratios against $A_V$ for the four strongest Balmer lines. At an electron temperature of $10^4$\,K and density of $10^{2}$\,cm$^{-3}$ to $10^{4}$\,cm$^{-3}$ these ratios are \citep{1989agna.book.....O} $\rm{H}\alpha/\rm{H}\beta = 2.87$, $\rm{H}\alpha/\rm{H}\gamma = 6.17$ and $\rm{H}\alpha/\rm{H}\delta = 11.24$. In a Milky-Way-type extinction law\footnote{We choose a MW-type extinction law with $R_V=3.08$ to compare directly with other studies, and note that the difference to extinction laws from the SMC or LMC is anyway small in the wavelength range of H$\delta$ to H$\alpha$.} \citep[][]{1992ApJ...395..130P}, the wavelengths of the four lines correspond to $A_{\rm{H}\alpha} = 0.79$\,mag, $A_{\rm{H}\beta}$ = 1.16\,mag, $A_{\rm{H}\gamma}$ = 1.31\,mag, $A_{\rm{H}\delta} = 1.381$\,mag for $A_V$ = 1\,mag. For the Balmer decrement of \ha\, over \hb\, follows:
+
+\begin{equation}
+A_V = \frac{-2.5\cdot\log({r_{\rm{obs}}}/{r_{\rm{theo}}})} {A_{{\rm{H}\alpha}}-A_{{\rm{H}\beta}}}
+\end{equation}
+and similarly for the other ratios. In total, we constrain $A_V$ for 71 events in the sample (Table~\ref{tab:physprop}), the distribution of which is shown in Fig.~\ref{fig:ebvhist}. 
+
+ {After applying the statistical analysis and cuts of Sects.~\ref{sec:dusty}~and~\ref{sec:statana}, the median $A_V$ of our sample is $A_V^{\rm med}=0.8^{+0.4}_{-0.3}$\,mag} and seems to be somewhat evolving with redshift (Fig.~\ref{fig:ebvhist}). At redshifts lower than $z<1$, there is a lower number of $A_V>1.5$\,mag hosts when compared to the $z>1$ sample, and we measure $A_V^{\rm{med}}=0.55_{-0.18}^{+0.24}$\,mag. This value is fully consistent with the value reported in \citet{2009ApJ...691..182S}. $A_V^{\rm{med}}$ increases to $A_V^{\rm{med}}=1.2\pm0.3$\,mag at $1<z<2$. It is $A_V^{\rm{med}}=0.7_{-0.2}^{+0.3}$\,mag at $z > 2$, but we note that the galaxies are significantly brighter than comparison samples of GRB hosts in this redshift range.
+
+The significance of this evolution in $A_V$ with redshift however is relatively modest: comparing the two distributions centered around $z\sim0.6$ ($z<1$) and $z\sim1.5$ ($1<z<2$) with each other (Fig.~\ref{fig:ebvhist}), the null-hypothesis, that the two distributions are drawn from the same parent sample, can be rejected with a significance of 2$\sigma$. At even higher redshifts further selection effects play an important role as well: high $A_V$ hosts are not appearing because of the decreasing sensitivity SFR at high $A_V$ (Fig.~\ref{fig:sens}). 
+
+{The relative sparsity of high-$A_V$ events at low redshift is however not easily explained by selection effects. At the average mass of the SF-weighted galaxy population of $M_{\star}\sim10^{10}$\,\Msun\, at $z\sim0.6$ \citep{2013ApJ...778..128P, 2014A&A...565A.112H}, the average reddening for galaxies is $E_{B-V}\sim0.35$\,{mag} \citep[][and references therein]{2014ApJ...792...75Z}. For GRBs to trace star-formation representatively, half of the sample would be expected above this value and half below, while we observe ($82\pm8$)\% of all hosts below $E_{B-V}=0.35$\,{mag} at $z<1$.}
+
+Although there are indications of an increasing dust-content in GRB hosts with redshift, the low significance prevents us from reaching stronger conclusions. Interestingly, however, a very similar trend - highest visual extinctions at $z\sim1.5-2$ - exists in the complete sample of $A_V$ values derived from afterglow data \citep{2013MNRAS.432.1231C} and in the evolution of the far UV attenuation in field galaxies \citep{2012A&A...539A..31C}. It is also consistent with the somewhat higher fraction of dusty GRBs at higher redshift (Sect.~\ref{sec:dusty}).
+
+\subsection{Star-formation rates}
+\label{sec:sfr}
+
+\begin{figure}
+\includegraphics[angle=0, width=0.99\columnwidth]{Figs/SFR_histogram.pdf}
+\caption{In the top panel, the blue-solid histogram with error bars shows the SFR distribution and its uncertainty of $z < 2$ GRBs, where we have applied the correction for the over-proportionality of dusty GRBs in the sample (Sects.~\ref{sec:dusty}~and~\ref{sec:statana}). Black data show all raw measurements without corrections. The lower panel shows cumulative distributions of SFR and its uncertainty of $z<0.7$ hosts (dark-blue), $0.7<z<1.3$ hosts (olive) and $1.3<z<2.0$ hosts (red), similarly corrected as the blue histogram. The black-dashed line denotes hosts at $z > 2$.}
+\label{fig:sfrhist}
+\end{figure}
+
+\begin{figure}
+\includegraphics[angle=0, width=0.99\columnwidth]{Figs/SFR_z.pdf}
+\caption{SFR as a function of redshift. Blue circles and red stars represent individual galaxies. Large or small pentagons are the median values binned in redshift with bootstrapped errors at $z<2$ and $z>2$, respectively.  {Here, we have applied the correction for the over-proportionality of dusty GRBs in the sample (Sects.~\ref{sec:dusty}~and~\ref{sec:statana})}. The grey-shaded areas represent the average sensitivity as detailed in Sect.~\ref{sec:sens} using $A_V=1$\,mag (Sect.~\ref{sec:av}). The three dashed lines show typical SFRs for differently massive galaxies from the main sequence \citep{2014arXiv1411.5687T} for a qualitative estimate of the evolution of field galaxies.}
+\label{fig:sfrz}
+\end{figure}
+
+As introduced in Sect.~\ref{sec:newsc}, we can use the flux of nebular lines to derive constraints on the current star-formation rate (SFR). \ha, in particular, is a common tracer of SF on short timescales of a few million years, and its dependence on the uncertainty in the dust-obscuration is only modest. 
+
+All SFRs are given in Table~\ref{tab:physprop} and are corrected for the measured $A_V$ if available (Sect.~\ref{sec:av}), or derived from scaling relations that intrinsically include the effect of dust (Sect.~\ref{sec:newsc}). Here we also add the systematic uncertainty of the flux calibration (Tables~\ref{tab:balmerlines} and ~\ref{tab:forbiddenlines}). In the majority of all cases, however, the error budget is dominated by the uncertainty in the dust correction.
+
+Generally, all of the hosts in the sample are forming stars at a level of at least 0.02\,\Msunyr. Even though we would be sensitive to galaxies with a very low SFR at $z<0.5$, we detect none (\citealp[but see][for a quiescent galaxy at the position of a GRB~050219A]{2014A&A...572A..47R}). Figure~\ref{fig:sfrhist} shows the distribution of SFRs for 89 hosts, out of which 68 are based on \ha, ten on \hb, eight on \oii\,and three on \oiii. The distribution is very broad, spanning nearly four orders of magnitude between 0.05\,\Msunyr\, up to around 200\,\Msunyr\, and peaks at 20\,\Msunyr.  {A large number of high-SFR galaxies either host dusty GRBs or are at $z>2$ (where selection effects are important). The peak of the corrected SFR distribution for $z<2$ GRBs (blue lines in Fig.~\ref{fig:sfrhist}) is therefore an order of magnitude lower (2\,\Msunyr).} 
+
+\subsubsection{Redshift Evolution of Star-formation rates}
+
+As shown in Figs.~\ref{fig:sfrhist} and \ref{fig:sfrz}, there is clear evolution of the typical SFR of GRB hosts with redshift. While at $z\sim0.5$, the median SFR of a GRB host is $\sim0.6$\,\Msunyr\, \citep[see also][]{2009ApJ...691..182S}, it rapidly increases by a factor of 25 to $\sim$15\,\Msunyr\, at $z\sim2$. Above $z>2$, no further strong rise is evident in the data, and the median SFR levels out at around $\sim$20\,\Msunyr. 
+
+ {This behavior changes only slightly if we take into account that our selection might miss the faintest $\sim$20\% of hosts (total of $\sim5$) at $1<z<2$ (Sect.~\ref{sec:seleffects} and Fig.~\ref{fig:selection}), or that we have initially excluded four spectra of galaxies that could potentially be in this redshift range (Sect.~\ref{sec:tarob})}. 
+
+ {The 30-40\% quantile of SFRs at $z > 1.3$ is still an order of magnitude larger than the median SFR at low redshifts (Fig.~\ref{fig:sfrhist}, lower panel). To be consistent at the 90\% confidence level with no evolution in SFR, we would need to have missed by chance more than 40 GRBs (i.e., twice the sample size in the $1.3<z<2.0$ range) that are hosted by galaxies with SFR$\lesssim$2\,\Msunyr.}
+
+At least at $z>2.5$ there is an obvious effect of sensitivity (shaded area in Fig.~\ref{fig:sfrz}): only the most star-forming hosts ($>$20\,\Msunyr) have emission lines bright enough to be picked up by X-shooter. We hence sample only the brightest end of the SFR distribution, and the comparison to the $z<2$ data becomes less meaningful. It is however clear that there is no further order-of-magnitude increase in the median SFR of GRB-selected galaxies above $z > 2$. 
+
+The strong evolution in the SFR is not particularly surprising: indeed it is similar to the redshift dependence of the UV luminosity of normal galaxies parametrized with e.g., the normalization of the main sequence \citep[e.g.,][]{2011ApJ...742...96W, 2012ApJ...754L..29W}. To illustrate the evolution of field galaxies, we also plot redshift tracks for galaxies {on the main sequence} with stellar masses between $M_{\star}=10^{9}$\,\Msun\, and $10^{11}$\,\Msun\, in dashed lines in Fig.~\ref{fig:sfrz}. They indicate qualitative (but not quantitative) agreement in the relative rise in SFR with redshift between the different samples. There are significant differences, in particular, because of a relative lack of galaxies in the high-SFR regime at low redshift.
+
+\subsubsection{Sparsity of high-SFR GRB hosts at $z<1$}
+
+ {We illustrate the sparsity of high-SFR galaxies hosting GRBs at low redshifts in Fig.~\ref{fig:sfrhalpha} using the GRB host sample between $z=0.55$ and $z=1.05$ ($\langle z \rangle = 0.81$) and the dust-corrected luminosity function (LF) of \ha\, from \citet{2011ApJ...726..109L} at a similar redshift (Schechter parameters $\alpha=1.6$ and $\log(L_*/(\rm{erg\,s^{-1}}))=43.0$). We multiply the LF by the SFR (or, in this case, \ha\,luminosity) because GRBs are expected to follow total SFR and not galaxy numbers.}
+
+ {The SFR-weighted \ha\,-LF then represents the distribution that would be obtained from GRB hosts if they directly traced all star-formation. Figure~\ref{fig:sfrhalpha} shows, however, a strong discrepancy between both distributions, with the GRB hosts peaking at around an order of magnitude lower SFRs ($\sim1$\,\Msunyr) than the SFR-weighted \ha\,-LF ($\sim10$\,\Msunyr). There is no observational bias in the sample that could explain this discrepancy.}
+
+\begin{figure}
+\includegraphics[angle=0, width=0.99\columnwidth]{Figs/SFRvsLFHa.pdf}
+\caption{ {SFR-weighted \ha-luminosity function at $z=0.8$ \citep{2011ApJ...726..109L} in red compared to the histogram of SFRs from GRB hosts. The blue-solid histogram with error bars shows the SFR distribution and its uncertainty of our $0.55 < z < 1.05$ GRBs, where we have applied the correction for the over-proportionality of dusty GRBs in the sample (Sects.~\ref{sec:dusty}~and~\ref{sec:statana}). Black data are raw measurements in the respective redshift range without corrections. Shown curves are normalized to an area of 1.}}
+\label{fig:sfrhalpha}
+\end{figure}
+
+\subsection{Line broadening}
+\label{sec:velo}
+
+\begin{figure}
+\includegraphics[angle=0, width=0.99\columnwidth]{Figs/Velo_histogram.pdf}
+\caption{In the top panel, the blue histogram with error bars shows the distribution of line broadenings ($\sigma$) and its uncertainty of $z < 2$ GRBs (Sects.~\ref{sec:dusty}~and~\ref{sec:statana}). The black histogram shows raw measurements without corrections. In the bottom panel we plot cumulative distributions of $\sigma$, where black/blue/red colours denote redshift intervals centered around of $z\sim0.5$, $z\sim1.1$ and $z\sim1.6$, respectively. To enhance clarity, the error-regions around the $z\sim1.1$ and $z>2$ histogram are not shown.}
+\label{fig:velohist}
+\end{figure}
+
+\begin{figure}
+\includegraphics[angle=0, width=0.99\columnwidth]{Figs/Velo_z.pdf}
+\caption{Line broadening $\sigma$ as a function of (from top to bottom): redshift, $A_V$ and $\sigma$. In the top panel, large/small pentagons show the median values binned in redshift with bootstrapped errors at $z<2$ and $z>2$, respectively. The colour coding of events corresponds to redshift, with the scale given by the colour-bar. In the lowest two panels, solid lines denote the most-likely linear regression, with regions (68\,\% probability) in shaded areas}
+\label{fig:veloz}
+\end{figure}
+
+The broadening of the nebular lines traces the turbulent and rotational motion of the hot gas within the gravitational potential of the host galaxy. The line-widths are well resolved in all but a few low-redshift cases because of the medium resolving power ($4000\lesssim R \lesssim 10000$) of X-shooter. The long-slit line-broadening correlates reasonably well with spatially-resolved velocity dispersions \citep{2011MNRAS.413..643R}, so we directly use the line-width $\sigma$ as a proxy for the gas velocity dispersion $\sigma_{\rm{d}}$. For the bulk of our targets, no evidence for rotation is seen in the spectra, but we caution that the rotational component contributes to the measured line-broadening, in particular at higher stellar masses \citep[e.g.,][]{2009ApJ...706.1364F}.
+
+The virial or dynamical mass $M_{\rm{d}}$ of a galaxy is then a function of galaxy geometry, velocity dispersion $\sigma_{\rm{d}}$, and typical physical extent, or half-light radius $r_{e}$ of the galaxy via the virial theorem \citep[see e.g.,][]{2001ApJ...554..981P} as $M_{\rm{d}} = C\sigma_{\rm{d}}^2(r_{\rm{e}}/G)$. $C$ is related to the galaxy's geometry, density and velocity anisotropy, with $C=5$ in the case of an isotropic sphere \citep{2001ApJ...554..981P}, or $C\sim3.4$ for a disk-like geometry \citep{2006ApJ...646..107E}.
+
+No measurements of the effective radius for the bulk of the sample is available to us because they are spatially unresolved from the ground.  {In addition, a systematic uncertainty is present at high redshift because the emission line shape is dominated by luminous \hii\, regions, probing only a part of the gravitational potential. Despite all these uncertainties, the simple velocity broadening is an important tracer of galaxy properties as demonstrated in Figs.~\ref{fig:veloz} and \ref{fig:zpropz}.} 
+
+The peak of the line-width distribution (Fig.~\ref{fig:velohist}) at 40\,\kms\, suggests a dynamical mass of the order of $M_{\rm{d}} \sim 10^{9.4}$\,\Msun, the lowest measured values (20\,\kms) imply $M_{\rm{d}} \sim 10^{8.7}$\,\Msun. At the high-$\sigma$ end, there are only three hosts above $\sigma=150$\,\kms, namely GRB~070521 ($z\sim2$ and with a large error on $\sigma$), GRB~090201 ($z\sim2$), and GRB~120118B ($z\sim3$) with indicate high dynamical masses ($M_{\rm{d}} \sim 10^{11}$\,\Msun). These three galaxies are selected through dust-extinguished GRBs and their $\sigma$ is comparable to the most luminous galaxies at the respective redshift interval \citep[e.g.,][]{2006ApJ...646..107E}.
+
+With respect to redshift (Fig.~\ref{fig:veloz}), there are indications for an evolution such that lower redshift GRB hosts have -- on average -- a smaller line-broadening. In particular, there is a lack of high-$\sigma$ galaxies at $z\lesssim1$ (Fig.~\ref{fig:velohist}, lower panel), while there is no obvious bias that would prevent us from selecting or observing these galaxies in the first place. The average $\sigma$ increases -- qualitatively similar to the evolution of $A_V$ in Sect.~\ref{sec:av} -- from $\sigma_{\rm{med}}=40\,$\kms\, at $z=0.5$ to $60\,\rm{km\,s^{-1}}\lesssim \sigma \lesssim 70\,$\kms\, at $z>1.0$. A mild correlation ($p=0.02$) exists also between $A_V$ and $\sigma$, two quantities which relate to the total mass of a galaxy.
+ 
+More obvious in Fig.~\ref{fig:veloz} is the strong correlation between SFR and $\sigma$ ($<10^{-6}$ of all samples have no correlation). A similar relation between luminosity and velocity dispersion as $L\propto\sigma_{\rm{p}}^{4}$ is well-established in the local Universe. It was first observed in ellipticals by \citet{1976ApJ...204..668F}, and later also in $z\sim2$ star-forming galaxies \citep{2006ApJ...646..107E}. \citet{2005ApJ...618..569M} describe this correlation as a consequence of moderation of star-formation activity through momentum-driven winds from supernovae together with radiation pressure. Star-formation would drive-out gas above a critical luminosity $L_{M} \propto 4f_{g}c/G\cdot\sigma_{\rm{p}}^{4}$, where $f_g$ is the gas fraction. At the bolometric, star-formation related luminosity of $L_M$ a star-forming galaxy then self-regulates its SFR and reaches its maximum luminosity.
+
+The correlation between SFR and $\sigma$ in Fig.~\ref{fig:veloz} is consistent with $\rm{SFR} \propto \sigma^4$, but there is considerable dispersion in the data. To test for a possible redshift evolution, we fit galaxies below and above $z=1$ with a fixed proportionality of $\sigma^4$. This returns within errors similar normalizations with minor evidence ($1.5\,\sigma$) for the higher-redshift galaxies shifted towards higher SFRs for a given $\sigma$. This would indicate higher gas-fractions in the model of \citet{2005ApJ...618..569M}.
+
+
+\subsection{Metallicity}
+\label{sec:met}
+
+\subsubsection{Metallicity measurements from strong-line diagnostics}
+
+One of the most fundamental -- but also most difficult to measure -- characteristic of galaxies is their metal abundance. While for GRB afterglows, metallicity can be probed directly and accurately in absorption at $z>1.8$ through their DLAs \citep[e.g.,][]{2004A&A...419..927V, 2006NJPh....8..195S, 2007ApJ...666..267P, 2009A&A...506..661L}, for faint (GRB-selected) galaxies it is unavoidable to resort to diagnostic ratios of strong emission lines \citep[e.g.,][]{2006ApJ...644..813E, 2008A&A...488..463M}. These strong line diagnostics use metallicity-dependent ratios of e.g., \oii\, and \oiii\, to \hb\, \citep[e.g.,][]{1979MNRAS.189...95P, 1991ApJ...380..140M, 1994ApJ...420...87Z}, \nii\, to \ha\, \citep{1979A&A....78..200A, 2004MNRAS.348L..59P} or \nii\, to \oii\, \citep[e.g.,][]{2002ApJS..142...35K} to derive an oxygen abundance $\oh$. For an extensive discussion, we refer to \citet{2002ApJS..142...35K}.
+ 
+In particular at high-$z$, a reliable determination of the metal content in the hot gas phase becomes challenging through these line ratios \citep[e.g.,][]{2008A&A...488..463M}. As we have seen in the previous paragraphs, the physical conditions, e.g., ionization parameter, SFR, possibly dust content and gas-fractions are different from those of low-$z$ galaxies on which most of the various strong-line diagnostics are calibrated. Currently, only very few directly-measured abundances from high-$z$ galaxies are available \citep[e.g.,][]{2012MNRAS.427.1973C} and none of the strong-line ratios are thus validated at $z\sim2$. Any metallicity that is derived from these strong-line ratios must thus be taken cautiously \citep[e.g.,][]{2014ApJ...795..165S}.
+
+In addition, we are faced here with the problem that our sample spans a broad range of redshifts, broad range of SFRs and host masses, and a different set of lines is detected for every host. Because of the different calibrations inherent in different strong-line diagnostics, any comparison of them needs thorough consideration \citep[e.g.,][]{2008ApJ...681.1183K}.
+
+Given the aforementioned constraints, we decide to base our metallicity measurements on the single set of calibrators from \citet{2006A&A...459...85N} and \citet{2008A&A...488..463M}, which provide a homogeneous set of line diagnostics for different line ratios. Specifically, we use the five diagnostics based on $R_{23}$, \oii\,and \neiii, \oiii\,and \nii, \ha\,and \nii, \nii\,and \oii\, and simultaneously minimize $\oh$ against the available data. Via the line-flux measurements and errors (i.e., likelihood distributions of fluxes), we construct probability density functions (PDFs) for each diagnostic ratio, as well as one PDF for the combination of them. Section~\ref{sec:metmeas} and Fig.~\ref{fig:zexamples} in the Appendix provide more details on the procedure and individual events. 
+
+We also provide all line-flux measurements and errors in Tables~\ref{tab:balmerlines} and \ref{tab:forbiddenlines}, so oxygen abundances can be reproduced and recalculated on any given metallicity scale with the preferred strong-line diagnostic.
+
+\subsubsection{Sample properties}
+\label{sec:metprop}
+
+\begin{figure}
+\includegraphics[angle=0, width=0.99\columnwidth]{Figs/Z_histogram.pdf}
+\caption{The top panel shows the histogram of measured oxygen abundances ($\oh$) derived through strong-line diagnostic ratios in blue following Sects.~\ref{sec:dusty}~and~\ref{sec:statana} and in black for all data. In the bottom panel we plot cumulative distributions of the GRB host metallicities in different redshift intervals, where blue/red/olive colours denote redshift intervals below $z=1$ ($z_{\rm{med}}=0.6$), $1<z<2$ ($z_{\rm{med}}=1.4$) , and $2<z$ ($z_{\rm{med}}=2.4$), respectively. $Z_{\odot}$ is indicated by the vertical, grey dashed line. Error-regions of the $1<z<2$ sample have a similar size as the one for $z<1$, but are not shown to enhance clarity.}
+\label{fig:zhist}
+\end{figure}
+
+In total, we measure well-constrained gas-phase metallicities for 45 events (Table~\ref{tab:physprop}) in a redshift range between $z=0.3$ and $z=3.4$ with a median of $z_{\rm {med}}=1.0$. The oxygen abundances are distributed between $\oh=7.8$ (GRB~120118B) and $\oh=9.0$ (GRB~051117B) with a peak of the distribution at $\oh \sim 8.5$ (Figure~\ref{fig:zhist}). 
+
+Intriguingly, we detect a non-negligible fraction of GRB hosts at solar metallicities $Z_{\odot}$ (Fig.~\ref{fig:zhist}, \citealp[see also][]{2010ApJ...712L..26L, 2013A&A...556A..23E}). It is thus obvious that there is no strict cut-off in host metallicities at least up to the solar value. We thus directly confirm the predictions from previous studies which indicated that GRBs form in various types of galaxies, even metal rich ones \citep{2007ApJ...660..504B, 2011A&A...534A.108K, 2013ApJ...778..128P, 2015arXiv150402479P}.
+
+{The number of hosts with a metallicity above solar, however, is relatively small. From the sub-sample of galaxies with metallicity measurements, we derive fractions of $24\pm 10$\%, $26\pm 13$\%, $7_{-4}^{+10}$\% for $z<1$, $1<z<2$ and $2<z$.  
+Under the assumption that the emission-line width $\sigma$ traces $Z$ as shown in Sect.~\ref{sec:corrzz}, we can estimate metallicities also for those galaxies for which the strong-line diagnostics can not be applied. For instance, the host of GRB~050525A at $z=0.6$ is faint ($R=25.7$~mag, \citealp{2012ApJ...756..187H}), has a narrow line width and low SFR, and is thus likely metal-poor (the correlations from Sect.~\ref{sec:corrzz} indicate $\oh\sim8.2$). When including all galaxies of this work, the fractions of super-solar metallicity hosts become $16\pm7$\%, $25\pm9$\%, $4_{-2}^{+5}$\% at $z<1$, $1<z<2$ and $2<z$, respectively.}
+
+At the highest redshifts $z\gtrsim3$, emission-line metallicities are traditionally very expensive and challenging to obtain. We derive through observations of \neiii\,for GRBs~110818A ($z=3.36$), 111123A ($z=3.15$) and 120118B ($z=2.94$) metallicities of $\oh=8.25_{-0.24}^{+0.15}$, $\oh=8.02_{-0.28}^{+0.27}$ and $\oh=7.83_{-0.29}^{+0.29}$, respectively. Comparing this with results on galaxy metallicities at $z\sim3.5$ and above \citep{2008A&A...488..463M, 2011ApJ...739....1L}, we see that those three events are probing the highest measured metallicities of LBGs at the given redshift. This is consistent with the significant line broadening and high SFRs (Sects.~\ref{sec:velo}~and~\ref{sec:sfr}).
+
+
+\subsubsection{Evolution with redshift}
+
+To test for an evolution of the gas-phase metal content with redshift, we divide the galaxies into low- ($z<1$, $z_{\rm{med}}=0.6$), mid- ($1<z<2$, $z_{\rm{med}}=1.4$) and high-redshift ($z>2$, $z_{\rm{med}} = 2.4$) samples and plot their histograms in the bottom panel of Fig.~\ref{fig:zhist}. Remarkably, the cumulative distributions appear similar in the two low-redshift intervals. In contrast, the high-redshift sample is somewhat shifted towards lower metallicities.
+
+Cosmic-chemical evolution arguably proceeds most rapidly at higher redshifts. Between $z\sim0$ and $z\sim0.7$ the decrease in $\oh$ for a galaxy of a given mass seems relatively modest at around 0.1-0.2~dex \citep{2004ApJ...613..898T, 2005ApJ...635..260S}, even though this difference in redshift corresponds to over 5 Gyr in the evolution of the Universe. The displacement of the mass-metallicity relation at high-$z$ is likely much larger than this, reaching $\sim$0.5~dex at the high-mass ($10^{11}$\,\Msun) end, and 1 dex at $10^{9}$\,\Msun\,at $z\sim3.5$ \citep{2008A&A...488..463M, 2014A&A...563A..58T}. This leads to relatively low gas-phase metallicities in the sample despite the fact that we are only sensitive to the more luminous GRB hosts at $z>2$.
+
+\subsubsection{Metallicity dependence of GRB hosts}
+
+\begin{figure}
+\includegraphics[angle=0, width=0.99\columnwidth]{Figs/MetvsMass.pdf}
+\caption{ {The blue-solid histogram with error bars shows the metallicity distribution and its uncertainty of 29 $0.3<z<1$ GRB hosts ($\langle z \rangle = 0.65$). We applied a correction for the over-proportionality of dusty GRBs in the sample (Sects.~\ref{sec:dusty}~and~\ref{sec:statana}) and for completeness from the line broadening. Black data show raw measurements. The solid-red line is the expectation from the stellar-mass function \citep{2014ApJ...783...85T} if GRBs without metallicity dependence. The dashed-red lines shows the same expectation but from a stellar-mass function ($3\sigma$) shifted towards lower metallicities. Shown curves are normalized to an area of 1.}}
+\label{fig:metvsmass}
+\end{figure}
+
+To understand the effects of metallicity on GRB progenitors and host galaxies and the implications for their ability to trace star-formation, we summarize the primary results from the previous sections: First, GRB hosts with metallicities of around half solar are common in our sample. Second, the $z<1$ and $1<z<2$ GRB host metallicity distributions appear to be very similar. Third, there is a modest fraction ($\sim 20\%$ at $z<1$) of GRBs in $Z > Z_{\odot}$ galaxies. And last, the maximum metallicity of the most luminous GRB hosts at $z\sim3$ is $Z\sim 0.5\cdot Z_{\odot}$.
+
+{In particular the relatively low fraction of GRB hosts with super-solar oxygen abundances points strongly towards a metallicity dependence in low-$z$ GRBs.}  {In Fig.~\ref{fig:metvsmass}, we compare the metallicity distribution derived from 29 $0.3<z<1$ GRB hosts ($\langle z \rangle = 0.6$) with the expectation from the contribution of field galaxies to the global star-formation rate density at a similar redshift. }
+
+ {As no sufficiently complete sample of field-galaxy metallicities is available in the literature at $z\sim0.6$, this comparison is based on the stellar-mass function from deep photometric surveys. To derive the red lines in Fig.~\ref{fig:metvsmass}, we start with the double Schechter parameterization of the galaxy-mass function at $z\sim0.6$ from \citet{2014ApJ...783...85T}. Using the mean-value of the SFR-stellar mass relation and its dispersion, we then calculate the 50\% quartile of SFR for a given stellar mass. }
+ 
+ {Finally, we use the parametrization of \citet{2010MNRAS.408.2115M} to convert the SFR, stellar mass pairs into a metallicity in the same scale as our GRB measurements and weight the resulting galaxy-metallicity function with the SFR\footnote{The figure and results remain conceptually unchanged if we use the host's $\oh$ and SFR to derive a stellar mass via \citet{2010MNRAS.408.2115M} to compare it with the SFR-weighted stellar-mass function.}. Because of the inherent uncertainties in this procedure, we also show (Fig.~\ref{fig:metvsmass}) an expectation from a single Schechter function ($\alpha=1.6$, $\log(M_*/(M_\odot)=10.5$). These are parameters which yield the distribution of lowest metallicity and are excluded only at a 3$\sigma$ confidence level.}
+
+ {The fraction of star-formation in galaxies above $Z_{\odot}$ can then be obtained via the integral under the red curves of Fig.~\ref{fig:metvsmass}, and ranges between 50\,\% and 75\,\%\footnote{Similar values are inferred through the analysis of \citet{2013ApJ...778..128P} and \citet{2014A&A...565A.112H}, which use deep photometric surveys \citep{2009ApJ...702.1393K, 2013A&A...556A..55I} to calculate an average stellar mass of the star-formation weighted galaxy population of $10^{9.7-10.2}$\,\Msun\, at $z\sim0.6$. This implies a metallicity between $Z=0.9\,Z_{\odot}$ and $Z=1.4\,Z_{\odot}$ \citep{2010MNRAS.408.2115M} in our oxygen-abundance scale.}. Similarly, \citet[][]{2011MNRAS.417.1013C} use N-body simulations with semi-analytical galaxy-formation models to predict around $\sim 50\%$ of GRBs in galaxies of super-solar metallicity in cases where GRBs would trace all star-formation (their Fig. 4).}
+
+Our results therefore directly confirm studies that at low-redshift, GRB host properties are affected by a preference of GRBs exploding in comparatively low-metallicity environments \citep[e.g.,][Perley et al. 2015c]{2006ApJ...642..636L, 2009ApJ...702..377K, 2010AJ....140.1557L, 2013ApJ...774..119G, 2013ApJ...778..128P, 2014arXiv1409.7064V, 2015arXiv150304246S}. The scarcity of high $A_V$ and high SFR galaxies at low-redshift as discussed in previous sections strengthens this interpretation.
+
+The observed metallicity dependence is unlikely to play a dominant role at $z\gtrsim3$. Already $z > 2$, the metallicity distribution is somewhat shifted towards lower metallicities despite the fact that the selection biases against low-luminosity hosts become more severe. At $z\sim3$ galaxies of solar metallicity are scarce even among the most luminous galaxies \citep{2014A&A...563A..58T}. Because the metallicity of star-forming galaxies in general is decreasing, GRBs are expected to form also more frequently in the most luminous galaxies. Therefore, GRB hosts at high redshift represent star-forming galaxies much better than at $z<1$ \citep[see also][]{2015arXiv150305323G, 2015arXiv150402479P}.
+
+There is already evidence that the implications of the metallicity dependence are weaker at $z\sim2$ \citep{2013ApJ...778..128P, 2015arXiv150304246S}, than in $z<1$ GRB-selected galaxies.
+
+\subsubsection{Correlations of metallicity with other host properties}
+\label{sec:corrzz}
+
+\begin{figure}
+\includegraphics[angle=0, width=0.99\columnwidth]{Figs/Z_z.pdf}
+\caption{Gas-phase metallicity as a function of (from top to bottom): redshift, $A_V$, SFR, and $\sigma$. Black data and error bars represent individual galaxies. The colour coding corresponds to redshift, with the scale given by the colour-bar. $Z_{\odot}$ is indicated by the horizontal, grey dashed line.}
+\label{fig:zprop}
+\end{figure}
+
+
+\begin{figure}
+\includegraphics[angle=0, width=0.99\columnwidth]{Figs/Z_z_z.pdf}
+\caption{Gas-phase metallicity as a function of $z$ and (from top to bottom): $A_V$, SFR and $\sigma$, and $z < 1$, $1<z<2$ and $2<z$ from left to right. Solid lines denote the best linear regression, with regions of 68\,\% probability in shaded areas. The last row shows also the relations from the lower-redshift panels in dashed lines. $Z_{\odot}$ is indicated by the horizontal, grey dashed line.}
+\label{fig:zpropz}
+\end{figure}
+
+Figure~\ref{fig:zprop} shows the dependence of host metallicity with redshift, dust reddening, SFR and emission-line width. A correlation exist ($p=0.0007$ of all iterations return no dependence) between $A_V$ and $Z$ ($\oh = 8.36 + 0.17 \cdot A_V/(\rm{mag})$). This relation is driven by $z<2$ events, as only a few $z>2$ hosts have sufficient data to constrain both $A_V$ and $Z$ at the same time. There are no strong correlations between SFR or $\sigma$ and $Z$ in the full sample, but this is the result of the large redshift range present in Fig.~\ref{fig:zprop}.
+
+In Fig.~\ref{fig:zpropz} we plot oxygen abundance versus SFR and $\sigma$ divided into three redshift bins, $z<1$ with $z_{\rm{med}}\sim0.6$, $1<z<2$ with $z_{\rm{med}}\sim1.4$ and $2<z$ with $z_{\rm{med}}\sim2.4$. A mild correlation exists between SFR and $Z$ similar to $Z\propto\mathrm{SFR}^{0.20\pm0.06}$ ($p=0.004$). Using a common slope, but a different normalization in the three redshift ranges, we fit all data simultaneously and derive:
+
+\begin{equation}
+\label{eq:ohsfr}
+\begin{split}
+\oh_{z<1} = 8.63 + 0.20\cdot \log(\rm{SFR/10\,M_\odot\,yr^{-1}}) \\
+\oh_{1<z<2} = 8.49 + 0.20\cdot \log(\rm{SFR/10\,M_\odot\,yr^{-1}})  \\
+\oh_{2<z} = 8.20 + 0.20\cdot \log(\rm{SFR/10\,M_\odot\,yr^{-1}})  \\
+\end{split}
+\end{equation}
+
+ {with uncertainties of 0.05 in the intercept in the earlier two, and 0.11 in the $z>2$ case. The root mean square (RMS) dispersion in the $z<1$ and $1<z<2$ redshift range is 0.25~dex each.}
+
+The decrease in $\log(\rm{O/H})$ for a given SFR between $z\sim0.6$ and $z\sim1.4$ is $0.14\pm0.08$~dex, but $0.4\pm0.1$~dex for the $z > 2$ sample (Fig.~\ref{fig:zpropz}). This is consistent with the relatively slow evolution of the mass-metallicity relation at lower redshift, as well as a more rapid change at $z > 1.5$. 
+
+The tightest and most significant correlation ($p<0.0001$) is also seen between metallicity and $\sigma$ as $Z\propto\sigma^{0.64\pm0.16}$ at $z<2$. We again fit all data together with a common slope and free normalization in the three redshift intervals and obtain for $\sigma$:
+
+\begin{equation}
+\label{eq:ohsigma}
+\begin{split}
+\oh_{z<1} = 8.70 + 0.64\cdot \log(\sigma/\rm{100\,km\,s^{-1}}) \\
+\oh_{1<z<2} = 8.66 + 0.64\cdot \log(\sigma/\rm{100\,km\,s^{-1}}) \\
+\oh_{2<z} = 8.31 + 0.64\cdot \log(\sigma/\rm{100\,km\,s^{-1}})
+\end{split}
+\end{equation}
+
+with uncertainties of 0.05/0.06 in the intercept in the earlier two, and 0.12 in the $z>2$ case. The behavior is qualitatively very similar to the SFR-$Z$ relation but with a lower scatter, i.e., a tighter correlation. 
+
+Low- and medium-redshift samples return comparable best-fit relations. In both cases $\sigma=100$\,\kms\, roughly corresponds to $Z\approx Z_{\odot}$. At $z > 2$, this value shifts downward by $0.4\pm0.1$~dex to an oxygen abundance of $\oh \approx 8.3$, but is affected by large measurement uncertainties.  {The RMS dispersion in the $z<1$ and $1<z<2$ redshift range is only 0.19 dex and 0.20~dex, respectively. Given that the typical error in the metallicity measurement via the strong-line diagnostic is already 0.11/0.16~dex, this implies that the very simple measurement of $\sigma$ provides already a good estimate of the gas-phase metallicity.}
+
+Taken at face value, there is no statistically significant correlation in the highest-redshift bin ($z>2$) between SFR and $Z$ as well as $\sigma$ and $Z$. Because of the large measurement uncertainties however, the data are consistent within errors with the lower-redshift slope, but as argued above, a lower normalization.
+
+\section{Summary} 
+\label{sec:conc}
+
+We present data and initial results from X-shooter emission-line spectroscopy of star-forming galaxies selected through long GRBs in a redshift range $0.1<z<3.6$. In total, we discuss observations of 96 individual targets which allow us to trace the physical properties of GRB hosts through cosmic time. The galaxies have a median redshift of $z_{\rm med}=1.6$ and most of them are in the range $0.5 < z < 1.5$ (35\%) and $1.5 < z < 2.5$ (41\%). We carefully test for selection effects in the sample, and statistically correct for a somewhat higher fraction of dusty GRBs ($35\,\pm5\%$) when compared to the one of representative GRB samples ($20-30\,\%$). 
+
+Our observation yield 17 new GRB redshifts, which increase the redshift completeness of previous samples to 87\% (TOUGH) and 97\% (BAT6), with median redshifts of $z_{\rm{med}} = 2.06\pm0.18$ and $z_{\rm{med}} = 1.67\pm0.15$, respectively.
+
+After excluding a very nearby event (GRB~100316D), a possibly short GRB (GRB~100816A), and five galaxies without clear emission lines we arrive at a total number of 89 emission-line spectra from galaxies selected by GRBs. Based on these data, we provide new scaling relations to derive SFRs from emission lines of \oii, \hb\, and \oiii\, even in the absence of a reliable dust correction (but with a large scatter). We measure galaxy-integrated star-formation rates (SFRs), visual dust-attenuations ($A_V$), line broadening ($\sigma$) and metallicities ($Z$) for our targets (Table~\ref{tab:physprop}). This yields the largest and most comprehensive sample of emission-line spectroscopy of GRB hosts available to date and allows us to study the distribution of the physical parameters and their evolution with redshift. 
+
+Our main results can be summarized as follows:
+\begin{enumerate}
+\item The distribution of $A_V$ for long GRB hosts is broad with the bulk of the targets at $A_V<1.5\,\rm{mag}$ and median $A_V^{\rm med} \sim 0.75$\,mag at $z<2$. We observe a mild trend with redshift such that GRB hosts at $z = 1.5$ tend to have larger dust content ($A_V^{\rm med} \sim 1.2$\,mag) and line broadening ($\sigma_{\rm{med}}\sim70$\,kms) on average than low-redshift hosts ($A_V^{\rm med} \sim 0.6$\,mag, and $\sigma_{\rm{med}}\sim40$\,kms). The significance of each of these results is only around $2\sigma$, but the evolution in $A_V$ is remarkably consistent with a similar behavior observed for GRB afterglows \citep{2013MNRAS.432.1231C}.
+\item There is a strong evolution of the average GRB host properties with redshift. The median SFR evolves from $\rm{SFR_{med}} = 0.6$\,\Msunyr\,at $z\sim0.6$ up to $\rm{SFR_{med}} = 15$\,\Msunyr\,at $z\sim2$ above which it does not increase significantly any further. 
+\item The ratio of $\oiii/\oii$ of the galaxies increases with redshift as well, which moves the star-forming galaxies away from the location of local galaxies in the BPT diagram. The value changes from  $\oiii/\oii\sim0.9$ at $z\sim0.3$ by a factor of three to $\oiii/\oii\sim3$ at $z\sim3$. While roughly similar at $z\sim0.6$ and $z\sim1.4$, the metallicity distribution of GRB hosts starts to shift to lower metallicities above $z=2$.
+\item We find a strong correlation between $\sigma$ and SFR broadly consistent with $\rm{SFR}\propto\sigma^4$ as known from the local Faber-Jackson relation. There is no statistically-significant evidence in the data that this proportionality evolves with redshift. 
+\item Further correlations exist between oxygen abundance and visual attenuation ($\oh \propto 0.17\cdot A_V$), SFR  ($\oh \propto\mathrm{SFR}^{0.2}$) and $\sigma$ ($\oh \propto\sigma^{0.6}$). In the last two cases, we observe a relatively similar behavior at $z < 1$ and $1<z<2$, but an evolution towards lower metallicities at $z > 2$ by $\sim 0.4$~dex for a given SFR or $\sigma$.
+
+\item We detect several hosts with super-solar metallicities which rule out a strict metallicity cutoff for GRB hosts below the solar values. At the same time, however, the fraction of GRBs hosted in $Z_{\odot} < Z$ galaxies at $z<1$ is smaller ($18\pm7\,\%$) than what would be expected from the contribution of similarly metal-rich galaxies to the total cosmic SFR ($\gtrsim 50\%$). A mechanisms is thus at place that quenches GRB formation at the highest metallicity. 
+\end{enumerate}
+
+At $z=3$, most of the star-formation takes place in galaxies of $Z\lesssim0.5\cdot Z_\odot$. At the same time GRB hosts with metallicities of around half solar are relatively common in our sample at lower redshift. Under the conditions that the probability of producing GRBs below a certain metallicity is constant (and not a strong function of metallicity itself) then by $z\sim3$ GRBs host will probe most of high-$z$ star-formation. In absence of further secondary environmental factors, GRB hosts would then provide an extensive picture of high-redshift star-formation. This conclusion is similar to the one reached through studying metallicities of GRB-DLAs \citep{2008ApJ...683..321F, 2014arXiv1410.3510A}, the UV-luminosity function at a similar redshift \citep{2005MNRAS.362..245J, 2015arXiv150304246S, 2015arXiv150305323G}, cosmological simulations \citep{2010MNRAS.408..647C} or modeling the mass distribution of GRB hosts \citep{2009ApJ...702..377K}.
+
+Our results can be understood in the cosmological context and a picture drawn by recent studies \citep{2008AJ....135.1136M, 2009ApJ...702..377K, 2013ApJ...778..128P, 2014arXiv1409.7064V, 2014arXiv1406.1503T, 2015arXiv150402479P,  2015arXiv150304246S} in which the GRB host properties at lower redshift ($z < 1-2$) are driven by the GRB's preference to occur in lower-metallicity galaxies without fully avoiding metal-rich ones. The scarcity of high $Z$, high $A_V$, and high SFR galaxies at low-redshift strongly supports this interpretation.
+
+\begin{acknowledgements}
+We are grateful to the referee and the editor, Rubina Kotak for comments and for providing an extensive and constructive report, that has helped to increase the quality and strength of the manuscript significantly. We thank the \textit{Swift} team for building and operating such an excellent facility. We also acknowledge the astronomical and technical support at Paranal observatory without which none of the presented spectra would have been taken. The Dark Cosmology Centre is funded by the Danish National Research Foundation. The research leading to these results has received funding from the European Research Council under the European Union's Seventh Framework Program (FP7/2007-2013)/ERC Grant agreement no. EGGS-278202. Part of the funding for GROND (both hardware as well as personnel) was generously granted from the Leibniz-Prize to Prof. G. Hasinger (DFG grant HA 1850/28-1). The data presented here were obtained in part with ALFOSC, which is provided by the Instituto de Astrofisica de Andalucia (IAA) under a joint agreement with the University of Copenhagen and NOTSA. TK thanks A. M\"{u}ller, L. Guzman, and L. Watson for providing the vibrant scientific atmosphere in Vitacura where some of this work was carried out. SSch acknowledges support from CONICYT-Chile FONDECYT 3140534, Basal- CATA PFB-06/2007, and Project IC120009 ''Millennium Institute of Astrophysics (MAS)'' of Iniciativa Cientifica Milenio del Ministerio de Economia, Fomento y Turismo. AR acknowledges support from PRIN-INAF 2012/13. Support for DAP was provided by NASA through Hubble Fellowship grant HST-HF-51296.01-A awarded by the Space Telescope Science Institute (STScI), which is operated by the Association of Universities  for Research in Astronomy (AURA), Inc., for NASA, under contract NAS 5-26555, and by an award issued by JPL/Caltech. EP acknowledges support from grants ASI-INAF I/088/06/0 and PRIN INAF 2011. PS acknowledges support through the Sofja Kovalevskaja Award from the Alexander von Humboldt Foundation of Germany. JFG acknowledges support through the Sofja Kovalevskaja Award to P. Schady from the Alexander von Humboldt Foundation of Germany. SK and ANG acknowledge support by DFG grant Kl 766/16-1. SSav acknowledges support from the Bundesministerium f\"ur Wirtschaft and Technologie through DLR (Deutsches Zentrum f\"ur Luft- und Raumfahrt e.V.) FKZ 50 OR 1211. Based in part on observations collected with the 2.2~m MPG telescope on La Silla  as part of the program CN2014B-102.
+\end{acknowledgements}
+
+
+\bibliography{./bibtex/refs}
+
+\begin{appendix}
+
+\section{Notes on individual targets}
+\label{app:newz}
+
+\subsection{GRB 111129A}
+
+The X-shooter spectrum of the GRB~111129A afterglow \citep{2011GCN..12600...1R} was taken on 2011-11-30, approximately 8.3\,h after the initial \textit{Swift} trigger. Above a red continuum \citep{2011GCN..12605...1R} we detect a single emission line (significance of $5.4\sigma$) at a wavelength of 7756\,\AA. Interpreting this as \oii, the redshift of GRB111129A is $z=1.0796$. If it were any of the other strong lines, we would expect to detect at least one other emission line in the spectrum, which we do not. At $z=1.0796$, however, there are indications for \oiii\, and \hb\,at the $2\sigma$ level in the NIR arm (\ha\, is in the $JH$-bandgap and thus not seen).
+
+\subsection{GRB 120211A}
+
+In deep Keck imaging taken on 2013-02-10, we detect an $I_{\rm{AB}}=25.0\pm0.2$\,mag host galaxy candidate within the XRT error circle \citep{2012GCN..12922...1G} of GRB~120211A \citep{2012GCN..12920...1S}. The spectral continuum of the putative host galaxy is detected also at high significance in the X-shooter spectrum from 2013-03-20 in a wavelength range between 9000\,\AA\,and 4100\,\AA. Below 4100\,\AA\, the flux sharply drops to zero. This apparent break is consistent with the onset of Ly$\alpha$ absorption at $z\sim2.4$. Consistent with this redshift, there are minor indications at the $2\sigma$-significance level for \oiii$\lambda$5007 emission at $z=2.346$ located in a region of high sky emission.
+
+\subsection{GRB 120224A}
+
+In the X-shooter spectrum  \citep{2012GCN..12991...1W} of an afterglow candidate of GRB~120224A \citep{2012GCN..12980...1S} taken on 2012-02-25, we detect a red continuum in the VIS and NIR arms, without obvious emission lines. Later GROND imaging reveals this to be a very red ($r-K_{\rm{AB}}=3.7$\,mag), and constant source, a plausible GRB host candidate. The spectral continuum drops below the noise floor blue-wards of 7000\AA. We rule out that the break is due to the Ly$\alpha$ at $z=4.8$, because the photometric colours, in particular the $g$-band detection ($g'=25.2\pm0.2$) disfavors such a high redshift. A photometric redshift analysis gives 90\% confidence interval of $0.9 < z_{\rm{phot}} < 1.3$. Indeed, there is a small redshift window at $z\sim1.1$ in which all strong emission lines (\oii, \oiii\, and \ha) would be hidden in telluric bands. This would provide an explanation for the non-detection of emission lines in our spectrum. The drop to zero flux in the spectrum would in this case be caused by intrinsic redness of the galaxy and the Balmer break. Significantly higher or lower redshifts are unlikely: The stellar mass of the galaxy derived from the photometry exceeds $10^{11}$\Msun\,already at $z > 1.5$, making the non-detection of emission lines hard to explain. Similarly, at $z \lesssim 0.6$, we would have expected to detect at least \ha\,in the spectrum even for a dusty galaxy.
+
+\subsection{GRB 120805A}
+
+The galaxy coincident with the afterglow \citep{2012GCN..13651...1G, 2012GCN..13591...1G} of GRB~120805A \citep{2012GCN..13588...1T} is identified through NOT \citep{2012GCN..13639...1M} and late GROND and VLT/HAWK-I observations at a brightness of $r=24.1\pm0.1$\,mag. It was observed with X-shooter spectroscopically on 2012-08-15. The spectral continuum is detected at high significance in the UVB/VIS arm between 5000\,\AA\, and 9500\,\AA. No signal is recorded blue-ward of 5000\,\AA\, or in the NIR arms. The shape of the spectral continuum and the GROND photometry are consistent with a redshift of $z\sim3.1$. The Ly$\alpha$ break explains the drop in flux at around 5000\,\AA, and the absence of strong emission lines in the spectrum is caused by telluric absorption bands. At this redshift, the host is luminous: $M_{\rm1700\AA\,}\sim-21.9$\,mag corresponds to $\sim2.5\cdot M^{*}$ at $z\sim3$ \citep[e.g.,][]{2009ApJ...692..778R}.
+
+\subsection{GRB 121209A}
+
+The $R_{\rm{AB}}=24.1\pm0.1$\,mag host galaxy of GRB~121209A \citep{2012GCN..14045...1M} was identified already very early \citep{2012GCN..14049...1K, 2012GCN..14056...1P}, and observed with X-shooter on 2012-12-13. The galaxy-continuum is detected significantly with X-shooter between 4900\,\AA\, and 9500\,\AA\, but not red-wards and with Keck LRIS between the atmospheric cutoff and 10300\,\AA\,\citep{2012GCN..14056...1P}. Using all available late photometry from VLT/FORS2 and VLT/HAWK-I, the best-fit photometric redshift for this galaxy is $z_{\rm{phot}} = 2.1\pm0.3$, in agreement with earlier limits \citep{2012GCN..14056...1P}. Despite the bright continuum, no emission lines are seen. This is also consistent with $z_{\rm{phot}}\sim1.9$, because all strong emission lines (\oiii, \oii, \ha) would be located in telluric absorption bands at this redshift. 
+
+\subsection{GRB 140114A}
+
+At the position of the optical afterglow \citep{2014GCN..15732...1B, 2014GCN..15743...1C} of GRB~140114A \citep{2014GCN..15728...1T}, we detect an $R_{\rm{AB}}=24.4\pm0.2\,$mag galaxy with NOT/ALFOSC that we interpret as the GRB's host galaxy. Our X-shooter spectroscopy from 2014-03-28 reveals no emission lines, but the galaxy continuum between 4850\,\AA\, and 9800\,\AA. A sharp drop in flux blue-ward of this wavelength range is best explained by the Ly$\alpha$ break at $z=3.0$. The relatively high redshift is also consistent with the absence of emission lines, because the strong forbidden lines of \oii\, and \oiii\,are in telluric absorption bands and \ha\, outside of the wavelength response of X-shooter.
+
+\section{Details on metallicity measurements and notable individual events}
+\label{sec:metmeas}
+
+To derive oxygen abundances via the strong-line diagnostic ratios from \citet{2006A&A...459...85N} and \citet{2008A&A...488..463M}, we take into account the dust attenuation, its uncertainty (\nii\, versus \ha\, or \neiii\,versus \oii\, have a negligible dependence on $A_V$) and the systematic scatter in the respective relation. We use \nii/\ha\, if available to discriminate between the upper and lower $R_{23}$ branch. Table~\ref{tab:physprop} provides the calculated metallicities and errors (as the range between 16\% and 84\% of cumulative probability distribution). These oxygen abundances need to be taken with a grain of salt, in particular at higher redshifts, as indicated in the main text. 
+
+In some cases, in particular at the highest redshifts ($z>2.5$), dust corrections to the line fluxes are not available because of lacking Balmer lines. In those cases, however, metallicities are derived using line ratios that are only marginally sensitive to dust corrections such as \neiii\,over \oii. The missing constraints on $E_{B-V}$ are thus not a strong concern for the metallicity measurement. The systematic and statistical error of the \neiii\,over \oii\,ratio is large, and it does not provide strong additional constraints once \nii\,-based line diagnostics are available. It is, however, the only accessible method at $z>3$ so we use it with the caveat that it is the least tested and used strong-line diagnostic ratio. It did provide a consistent metallicity in those cases where we could test it with other methods.
+
+Figure~\ref{fig:zexamples} shows several representative examples of metallicity determinations for six galaxies at different redshifts. We specifically pick GRB hosts or afterglows that were extensively discussed in the recent literature: GRB~070306 \citep{2008ApJ...681..453J, 2011A&A...534A.108K}, GRB~080207 \citep{2011ApJ...736L..36H, 2012MNRAS.421...25S, }, GRB~091127 \citep{2011A&A...535A.127V}, GRB~100621A \citep{2013A&A...560A..70G}, GRB~111209A \citep{2013ApJ...766...30G, 2014ApJ...781...13L, 2015Greinersubm, 2015Kannsubm} and GRB~130427A \citep[e.g.,][]{2013ApJ...776...98X, 2014ApJ...781...37P}. We will discuss them briefly in the following section because they are illustrative for the metallicity measurement procedure and interesting individually.
+
+\begin{figure*}
+\begin{subfigure}{.33\textwidth}
+  \includegraphics[width=0.999\linewidth]{Figs/GRB070306_met_combined.pdf}
+\end{subfigure}
+\begin{subfigure}{.33\textwidth}
+  \includegraphics[width=0.999\linewidth]{Figs/GRB080207_met_combined.pdf}
+\end{subfigure}
+\begin{subfigure}{.33\textwidth}
+  \includegraphics[width=0.999\linewidth]{Figs/GRB091127_met_combined.pdf}
+\end{subfigure}
+\begin{subfigure}{.33\textwidth}
+  \includegraphics[width=0.999\linewidth]{Figs/GRB100621A_met_combined.pdf}
+\end{subfigure}
+\begin{subfigure}{.33\textwidth}
+  \includegraphics[width=0.999\linewidth]{Figs/GRB111209A_met_combined.pdf}
+\end{subfigure}
+\begin{subfigure}{.33\textwidth}
+  \includegraphics[width=0.999\linewidth]{Figs/GRB130427A_met_combined.pdf}
+\end{subfigure}
+\caption{Example of metallicity measurements using different strong line diagnostics \citep{2006A&A...459...85N, 2008A&A...488..463M}. Every coloured line represents the normalized probability distribution of one strong-line diagnostic. The black line is the probability distribution of $\oh$ simultaneously minimized against all available measured line ratios.}
+\label{fig:zexamples}
+\end{figure*}
+
+\subsection{GRB~070306} GRB~070306 ($z=1.497$) is a prominent dark GRB host with detections throughout the electromagnetic spectrum \citep{2014A&A...565A.112H, 2014arXiv1408.5076S, 2015ApJ...801..102P}. The X-shooter spectrum shows numerous emission lines, which allow the Balmer decrement to be reasonably well measured ($E_{B-V} = 0.43_{-0.10}^{+0.09}$\,mag). The \nii/\ha\,line-flux ratio uniquely puts the $R_{23}$ solution onto the upper branch. The individual emission line diagnostics have overlapping probability distributions, and a simultaneous fit to all five line ratios results in a metallicity of $\oh=8.54\pm0.09$, which is $0.8\pm0.2$ times the solar value (Fig.~\ref{fig:zexamples}).
+
+\subsection{GRB 080207} GRB~080207 ($z=2.086$) is also a well-discussed dark GRB host detected by various facilities from the optical to radio \citep[e.g.,][]{2011ApJ...736L..36H, 2012MNRAS.421...25S, 2012A&A...545A..77R}. It has a very high stellar mass ($M_{\star}\sim10^{11}$\,\Msun, \citealt{2013ApJ...778..128P}), extremely red optical/NIR colours and is vigorously forming stars ($\rm{SFR}_{\rm{H\alpha}}\sim 90\,$\Msunyr). Because of the large $A_V\sim2$, \oii\, is not detected and the applied strong-line diagnostics are thus based exclusively on \nii. We measure a metallicity around solar, $\oh = 8.73\pm0.15$. This is the GRB host with the highest metallicity at $z>2$ in the sample. Its metallicity, however, is averaged over the multiple knots that are detected at the spatial resolution of HST \citep{2012MNRAS.421...25S}, which in theory could host a range of metallicities. 
+
+\subsection{GRB~091127} GRB~091127 ($z=0.490$) is a typical low-redshift GRB with a bright afterglow and faint host \citep{2011A&A...535A.127V,2011A&A...526A.113F}. It is an example of a galaxy having $R_{23}$ in the overlap region between the two metallicity solutions. Even though the forbidden oxygen and Balmer lines are detected at good S/N, the lack of detection of either \neiii\,or \nii\, limits the number of useful line-diagnostics to $R_{23}$. Given that the line ratios put the host of GRB~091127 at around the turn-over point of the two branches, the probability distribution is not double valued, but rather broad because $\oh$ is not very sensitive to variations in $R_{23}$ in this region. We derive $\oh=8.06_{-0.18}^{+0.19}$ for the host of GRB~091127.
+
+\subsection{GRB~100621A} GRB~100621A ($z=0.543$) is a low-$z$ GRB with a faint and dust-reddened afterglow \citep{2013A&A...560A..70G}. The host spectrum has, in addition to well-detected \oii, \oiii, \ha, and \hb\, emission lines, a highly-significant detection of \neiii\,(but not \nii). The degeneracy of the double-peaked $R_{23}$ probability distribution in metallicity is clearly evident in Fig.~\ref{fig:zexamples}. It is, however, broken through \neiii. Even though the individual \neiii-based metallicity is not well constrained, in combination with $R_{23}$ we can derive $\oh$ accurately to $\oh=8.52\pm0.10$ with only a very small remaining probability for the lower branch solution of the $R_{23}$ diagnostic.
+
+\subsection{GRB~111209A} GRB~111209A ($z=0.677$) is one of the longest GRBs ever detected. The extreme temporal properties were used to postulate a new class of GRBs \citep{2013ApJ...766...30G, 2014ApJ...781...13L}, a result questioned by \citet{2013ApJ...778...54V}. The ultra-long duration is possibly indicative of a different progenitor channel \citep{2013ApJ...778...67N}, and the associated luminous supernova is well-explained in a magnetar scenario \citep{2015Kannsubm, 2015Greinersubm}. Based on the detection of \oii, \oiii\, and \neiii, in addition to the Balmer lines, we measure $\oh=7.95_{-0.17}^{+0.30}$ or between 10\% and 40\% of the solar value. This puts the galaxy at the low end of metallicities compared to many ordinarily-long GRBs at similar redshift (Fig.~\ref{fig:zhist}). Together with the low reddening, narrow line width, compact morphology and low luminosity \citep{2014ApJ...781...13L} it shares many similarities with Blue Compact Dwarfs \citep[e.g.,][and references therein]{2003ApJS..147...29G} or hosts of super-luminous supernovae \citep[e.g.,][]{2014arXiv1409.8331L}. The galaxy hosting GRB~111209A is, however, not extremely metal-poor, and its spectroscopic properties do not provide a stark contrast to long GRBs with a more common duration (see e.g., GRB~091127 above), a conclusion similar to the one of \citet{2014ApJ...781...13L}.
+
+\subsection{GRB~130427A} GRB~130427A ($z=0.340$) is one of the brightest GRBs of all time due to its low redshift and is extremely well studied from the radio to GeV energies \citep[e.g.,][]{2014ApJ...781...37P, 2014Sci...343...42A, 2014MNRAS.444.3151V}. It is a very rare example of an energetically-normal (and not sub-luminous) GRB in the relatively near-by Universe, elucidating typical cosmological GRBs and their connection to SNe through a local analogue \citep{2013ApJ...776...98X, 2014ApJ...792..115L, 2014A&A...567A..29M}. The host characteristics are relatively normal for the given redshift: With a $\rm{SFR}_{\rm{H\alpha}}= 0.3^{+0.2}_{-0.1}\,$\Msunyr and metallicity of $\oh=8.58_{-0.13}^{+0.12}$ it is well within the distribution of low-$z$ GRB host properties.
+
+\end{appendix}
+\end{document}

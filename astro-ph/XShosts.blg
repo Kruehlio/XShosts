@@ -1,0 +1,80 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: XShosts.aux
+The style file: ./bibtex/aa.bst
+Reallocated field_info (elt_size=4) to 10650 items from 5000.
+Database file #1: ./bibtex/refs.bib
+You're missing a field part---line 338 of file ./bibtex/refs.bib
+ :     month = 
+ :             ,
+I'm skipping whatever remains of this entry
+You're missing a field part---line 382 of file ./bibtex/refs.bib
+ :     month = 
+ :             ,
+I'm skipping whatever remains of this entry
+You're missing a field part---line 396 of file ./bibtex/refs.bib
+ :     month = 
+ :             ,
+I'm skipping whatever remains of this entry
+You're missing a field part---line 411 of file ./bibtex/refs.bib
+ :     month = 
+ :             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3209 of file ./bibtex/refs.bib
+ : @article{2004AJ....127.2002K
+ :                             ,
+I'm skipping whatever remains of this entry
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Repeated entry---line 4312 of file ./bibtex/refs.bib
+ : @article{2011MNRAS.411.2792S
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4824 of file ./bibtex/refs.bib
+ : @article{2015arXiv150305323G
+ :                             ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for ""
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--empty publisher in 1989agna.book.....O
+You've used 225 entries,
+            3039 wiz_defined-function locations,
+            2163 strings with 100982 characters,
+and the built_in function-call counts, 225483 in all, are:
+= -- 16515
+> -- 31063
+< -- 31
++ -- 10394
+- -- 10158
+* -- 21826
+:= -- 42717
+add.period$ -- 225
+call.type$ -- 225
+change.case$ -- 4285
+chr.to.int$ -- 214
+cite$ -- 226
+duplicate$ -- 4163
+empty$ -- 5804
+format.name$ -- 10696
+if$ -- 43573
+int.to.chr$ -- 12
+int.to.str$ -- 1
+missing$ -- 221
+newline$ -- 679
+num.names$ -- 901
+pop$ -- 4302
+preamble$ -- 1
+purify$ -- 4285
+quote$ -- 0
+skip$ -- 3390
+stack$ -- 0
+substring$ -- 4385
+swap$ -- 49
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 2022
+warning$ -- 1
+while$ -- 869
+width$ -- 0
+write$ -- 2246
+(There were 7 error messages)
