@@ -15,140 +15,140 @@ GRB host & Gal. $E_{B-V}$ & \multicolumn{3}{c}{Exposure time (s)} & \multicolumn
 \hline
 \endfoot
 %%
-%GRB 000210  & 0.017 & $4\times 1800$ & $4\times 1800$ & $12\times 600$ & 1\farc{3} & 1\farc{5} & 1\farc{5} & 2009-11-20 & (1), (2) \\
-%GRB 000418  & 0.029 & $2\times 1800$ & $2\times 1800$ & $6\times 600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-04-16 & (3), (4) \\
-%GRB 000911  & 0.102 & $4\times 1800$ & $4\times 1800$ & $12\times 600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2009-11-21 & (5), (6) \\
-%GRB 011211  & 0.037 & $4\times 1800$ & $4\times 1800$ & $8\times 900$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-03-18 & (7), (8) \\
-%GRB 021004  & 0.050 & $4\times 1200$ & $4\times 1238$ & $8\times 650$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2009-11-20 & (9), (10) \\
-% 		    & 		& $4\times 900$ & $4\times 938$ & $4\times 950$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2009-11-20 &  \\
-% 		    & 		& $4\times 1200$ & $4\times 1238$ & $8\times 650$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2009-11-21 & \\
-%GRB 050219A & 0.138 & $4\times 600$ & $4\times 600$ & $4\times 600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-04-19 & (11) \\
-GRB 050416A & 0.026 & $4\times 900$ & $4\times 900$ & $12\times 300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-01-19 & (1), (2) \\
-GRB 050525A & 0.082 & $4\times 1050$ & $4\times 1050$ & $12\times 350$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2012-09-18 & (1) \\
- 			& 		& $4\times 630$ & $4\times 664$ & $4\times 695$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2012-09-21 & \\
-GRB 050714B & 0.048 & $12\times 940$ & $12\times 900$ & $36\times 325$ & 0\farc{8} & 0\farc{7} & 0\farc{6} & 2013-03-19 & (1) \\
-GRB 050819  & 0.100 & $2\times 900$ & $2\times 900$ & $4\times 450$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-10-29 & (1), (3) \\
-GRB 050824  & 0.030 & $4\times 900$ & $4\times 900$ & $8\times 450$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2011-09-06 & (1) \\
-GRB 050915A & 0.022 & $6\times 1200$ & $6\times 1200$ & $12\times 600$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2011-09-06 & (1), (3), (4), (5) \\
-GRB 051001  & 0.013 & $2\times 1800$ & $2\times 1800$ & $4\times 900$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2010-10-30 & (1), (3) \\
-GRB 051016B & 0.035 & $2\times 600$ & $2\times 600$ & $4\times 300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2009-12-23 & (1) \\
-GRB 051022A & 0.052 & $2\times 1200$ & $2\times 1200$ & $4\times 600$ & 1\farc{6} & 1\farc{5} & 0\farc{9}$JH$ & 2012-11-13 & (6) \\
-GRB 051117B & 0.048 & $1\times 720$ & $1\times 720$ & $2\times 360$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2009-12-23 & (1) \\
+%GRB 000210  & 0.017 & $4\times 1800$ & $4\times 1800$ & $12\times 600$ & 1\farc{3} & 1\farc{5} & 1\farc{5} & 2009-Nov-20 & (1), (2) \\
+%GRB 000418  & 0.029 & $2\times 1800$ & $2\times 1800$ & $6\times 600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-May-16 & (3), (4) \\
+%GRB 000911  & 0.102 & $4\times 1800$ & $4\times 1800$ & $12\times 600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2009-Nov-21 & (5), (6) \\
+%GRB 011211  & 0.037 & $4\times 1800$ & $4\times 1800$ & $8\times 900$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-Mar-18 & (7), (8) \\
+%GRB 021004  & 0.050 & $4\times 1200$ & $4\times 1238$ & $8\times 650$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2009-Nov-20 & (9), (10) \\
+% 		    & 		& $4\times 900$ & $4\times 938$ & $4\times 950$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2009-Nov-20 &  \\
+% 		    & 		& $4\times 1200$ & $4\times 1238$ & $8\times 650$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2009-Dec-21 & \\
+%GRB 050219A & 0.138 & $4\times 600$ & $4\times 600$ & $4\times 600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-Apr-19 & (11) \\
+GRB 050416A & 0.026 & $4\times 900$ & $4\times 900$ & $12\times 300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-Jan-19 & (1), (2) \\
+GRB 050525A & 0.082 & $4\times 1050$ & $4\times 1050$ & $12\times 350$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2012-Sep-18 & (1) \\
+ 			& 		& $4\times 630$ & $4\times 664$ & $4\times 695$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2012-Sep-21 & \\
+GRB 050714B & 0.048 & $12\times 940$ & $12\times 900$ & $36\times 325$ & 0\farc{8} & 0\farc{7} & 0\farc{6} & 2013-Mar-19 & (1) \\
+GRB 050819  & 0.100 & $2\times 900$ & $2\times 900$ & $4\times 450$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-Oct-29 & (1), (3) \\
+GRB 050824  & 0.030 & $4\times 900$ & $4\times 900$ & $8\times 450$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2011-Sep-06 & (1) \\
+GRB 050915A & 0.022 & $6\times 1200$ & $6\times 1200$ & $12\times 600$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2011-Sep-06 & (1), (3), (4), (5) \\
+GRB 051001  & 0.013 & $2\times 1800$ & $2\times 1800$ & $4\times 900$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2010-Oct-30 & (1), (3) \\
+GRB 051016B & 0.035 & $2\times 600$ & $2\times 600$ & $4\times 300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2009-Dec-23 & (1) \\
+GRB 051022A & 0.052 & $2\times 1200$ & $2\times 1200$ & $4\times 600$ & 1\farc{6} & 1\farc{5} & 0\farc{9}$JH$ & 2012-Nov-13 & (6) \\
+GRB 051117B & 0.048 & $1\times 720$ & $1\times 720$ & $2\times 360$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2009-Dec-23 & (1) \\
 % GRB 060204B added by hand during refereeing
-GRB 060204B  & 0.015 & $4\times 900$ & $4\times 900$ & $9\times 300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2015-03-05 &  \\
+GRB 060204B  & 0.015 & $4\times 900$ & $4\times 900$ & $9\times 300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2015-Mar-05 &  \\
 
-GRB 060306  & 0.030 & $4\times 1800$ & $4\times 1800$ & $12\times 600$ & 1\farc{3} & 1\farc{2} & 1\farc{2} & 2011-09-01 & (1), (3), (5)\\
-GRB 060604  & 0.037 & $4\times 1800$ & $4\times 1800$ & $8\times 900$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-10-30 & (1), (3)\\
-GRB 060707  & 0.019 & $4\times 860$ & $4\times 850$ & $12\times 300$ & 1\farc{3} & 1\farc{2} & 1\farc{2} & 2009-10-22 & (1), (7) \\
-GRB 060719  & 0.007 & $4\times 1500$ & $4\times 1500$ & $12\times 500$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-10-20 & (1), (3), (5)\\
-GRB 060729  & 0.048 & $4\times 810$ & $4\times 844$ & $4\times 875$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2012-09-21 & (1)\\
- 			& 		& $4\times 520$ & $4\times 554$ & $4\times 585$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2012-09-21 & \\
-GRB 060805A & 0.021 & $10\times 940$ & $10\times 900$ & $30\times 320$ & 0\farc{8} & 0\farc{7} & 0\farc{6} & 2013-03-19 & (1), (3)\\
-GRB 060814  & 0.034 & $2\times 1800$ & $2\times 1800$ & $6\times 600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-02-17 & (1), (3), (5) \\
-GRB 060912A & 0.045 & $2\times 900$ & $2\times 934$ & $2\times 965$ & 1\farc{3} & 1\farc{2} & 1\farc{2} & 2012-09-21 & (1)\\
-GRB 060923B & 0.129 & $2\times 1800$ & $2\times 1800$ & $6\times 600$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2013-03-20 & (1) \\
-GRB 060926  & 0.137 & $4\times 1800$ & $4\times 1800$ & $12\times 600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-04-24 & (18) \\
-GRB 061021  & 0.049 & $12\times 940$ & $12\times 900$ & $36\times 320$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2013-03-21 & (1)\\
-GRB 061110A & 0.076 & $4\times 1800$ & $4\times 1800$ & $12\times 600$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2011-10-20 & (1)\\
+GRB 060306  & 0.030 & $4\times 1800$ & $4\times 1800$ & $12\times 600$ & 1\farc{3} & 1\farc{2} & 1\farc{2} & 2011-Sep-01 & (1), (3), (5)\\
+GRB 060604  & 0.037 & $4\times 1800$ & $4\times 1800$ & $8\times 900$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-Oct-30 & (1), (3)\\
+GRB 060707  & 0.019 & $4\times 860$ & $4\times 850$ & $12\times 300$ & 1\farc{3} & 1\farc{2} & 1\farc{2} & 2009-Oct-22 & (1), (7) \\
+GRB 060719  & 0.007 & $4\times 1500$ & $4\times 1500$ & $12\times 500$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-Oct-20 & (1), (3), (5)\\
+GRB 060729  & 0.048 & $4\times 810$ & $4\times 844$ & $4\times 875$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2012-Sep-21 & (1)\\
+ 			& 		& $4\times 520$ & $4\times 554$ & $4\times 585$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2012-Sep-21 & \\
+GRB 060805A & 0.021 & $10\times 940$ & $10\times 900$ & $30\times 320$ & 0\farc{8} & 0\farc{7} & 0\farc{6} & 2013-Mar-19 & (1), (3)\\
+GRB 060814  & 0.034 & $2\times 1800$ & $2\times 1800$ & $6\times 600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-Feb-17 & (1), (3), (5) \\
+GRB 060912A & 0.045 & $2\times 900$ & $2\times 934$ & $2\times 965$ & 1\farc{3} & 1\farc{2} & 1\farc{2} & 2012-Sep-21 & (1)\\
+GRB 060923B & 0.129 & $2\times 1800$ & $2\times 1800$ & $6\times 600$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2013-Mar-20 & (1) \\
+GRB 060926  & 0.137 & $4\times 1800$ & $4\times 1800$ & $12\times 600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-Apr-24 & (18) \\
+GRB 061021  & 0.049 & $12\times 940$ & $12\times 900$ & $36\times 320$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2013-Mar-21 & (1)\\
+GRB 061110A & 0.076 & $4\times 1800$ & $4\times 1800$ & $12\times 600$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2011-Oct-20 & (1)\\
 % GRB 061202 added by hand during refereeing
-GRB 061202  & 0.131 & $4\times 900$ & $4\times 900$ & $9\times 300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2014-11-29 &  \\
-GRB 070103  & 0.058 & $2\times 900$ & $2\times 900$ & $4\times 450$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-10-29 & (1), (3) \\
-GRB 070110  & 0.013 & $4\times 1680$ & $4\times 1680$ & $8\times 840$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-10-29 & (1), (7) \\
-GRB 070129  & 0.120 & $4\times 900$ & $4\times 900$ & $12\times 300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2009-12-23 & (1)\\
-GRB 070224  & 0.049 & $8\times 940$ & $8\times 900$ & $24\times 300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-03-20 & (1), (3) \\
- 			& 		& $4\times 900$ & $4\times 920$ & $12\times 320$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-03-20 & \\
-GRB 070306  & 0.024 & $6\times 900$ & $6\times 900$ & $6\times 900$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-12-09 & (1), (5), (8), (9) \\
-GRB 070318  & 0.015 & $4\times 910$ & $4\times 885$ & $12\times 300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-10-06 & (1) \\
-GRB 070328  & 0.031 & $7\times 844$ & $7\times 810$ & $8\times 875$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2012-09-21 & (1) \\
- 			& 		& $1\times 589$ & $1\times 585$ & \nodata & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2012-09-21 & \\
-GRB 070419B & 0.076 & $4\times 1800$ & $4\times 1800$ & $12\times 600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-10-20 & (1) \\
-GRB 070521  & 0.023 & $4\times 900$ & $4\times 900$ & $12\times 300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-04-03 & (5), (10) \\
- 			& 		& $4\times 900$ & $4\times 900$ & $12\times 300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-05-07 & \\
-GRB 070802  & 0.023 & $4\times 1800$ & $4\times 1800$ & $8\times 900$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-10-30 & (1), (5), (9), (11) \\
-GRB 071021  & 0.057 & $4\times 1800$ & $4\times 1800$ & $12\times 600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-09-06 & (3), (5) \\
-%GRB 071117  & 0.020 & $1\times 1800$ & $1\times 1708$ & $2\times 900$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-08-14 & \\
-%                      &           & $1\times 1714$ & $1\times 1708$ & \nodata & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-08-14 & \\
-GRB 080207  & 0.020 & $4\times 1800$ & $4\times 1800$ & $12\times 600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-04-24 & (3), (5), (10) \\
-GRB 080413B & 0.032 & $3\times 1800$ & $3\times 1800$ & $6\times 900$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-08-15 & (23) \\
-%GRB 080520  & 0.068 & $4\times 2700$ & $4\times 2700$ & $12\times 900$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-08-13 & \\
-% 			& 		& $1\times 1800$ & $1\times 1800$ & $2\times 900$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-08-13 & \\
-GRB 080602	& 0.025	& $4\times 900$	 & $4\times 900$ & $12\times 300$ &	1\farc{0} &	0\farc{9} &	0\farc{9} &	2013-08-18	& (10) \\%
-		    &		& $4\times 900$	 & $4\times 900$ & $12\times 300$ &	1\farc{0} &	0\farc{9} &	0\farc{9} &	2013-08-19	& \\
-GRB 080605  & 0.118 & $4\times885$ & $4\times910$ & $12\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-04-26 & (9), (12) \\
-GRB 080804  & 0.014 & $4\times1350$ & $4\times1350$ & $12\times450$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-04-19 & \\
-GRB 080805  & 0.037 & $4\times885$ & $4\times910$ & $12\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-05-13 & (9) \\
-GRB 081109  & 0.017 & $2\times1200$ & $2\times1200$ & $4\times600$ & 1\farc{6} & 1\farc{5} & 0\farc{9}$JH$ & 2012-10-13 & (5), (9)\\
- 			& 		& $2\times1200$ & $2\times1200$ & $4\times600$ & 1\farc{6} & 1\farc{5} & 0\farc{9}$JH$ & 2012-11-14 & \\
-GRB	081210	& 0.066	& $4\times900$	& $4\times900$	& $12\times300$	& 1\farc{0}	& 1\farc{0}	& 0\farc{9}	& 2014-10-19 &	\\
-GRB 081221  & 0.019 & $4\times1800$ & $4\times1800$ & $12\times600$ & 1\farc{3} & 1\farc{2} & 1\farc{2} & 2011-09-01 & (5), (14) \\
-GRB 090113  & 0.072 & $2\times1800$ & $2\times1800$ & $4\times900$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2011-09-06 & (3) \\
-GRB 090201  & 0.059 & $2\times1200$ & $2\times1200$ & $8\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-12-25 & \\
- 			& 		& $2\times1200$ & $2\times1200$ & $8\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-12-31 & \\
-GRB 090323  & 0.021 & $3\times1560$ & $3\times1560$ & $9\times520$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-03-11 & (15) \\
-GRB 090407  & 0.059 & $4\times1800$ & $4\times1800$ & $8\times900$ & 0\farc{8} & 0\farc{7} & 0\farc{6} & 2010-10-30 & (3), (5) \\
-GRB 090926B & 0.020 & $2\times1200$ & $2\times1200$ & $8\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2012-11-14 & (9) \\
- 			& 		& $2\times1200$ & $2\times1200$ & $8\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2012-12-17 & \\
-GRB 091018  & 0.025 & $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2009-10-19 & (16) \\
-GRB 091127  & 0.033 & $4\times1500$ & $4\times1500$ & $8\times750$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2009-12-02 & (17) \\
-%GRB 100316B & 0.120 & $7\times650$ & $7\times650$ & $21\times270$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-04-17 & \\
-GRB 100316D & 0.101 & $4\times1200$ & $4\times1200$ & $12\times400$ & 0\farc{8} & 0\farc{7} & 0\farc{9} & 2011-04-03 & (18), (19) \\
-GRB 100418A & 0.063 & $4\times1200$ & $4\times1200$ & $8\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-04-21 & (20), (21) \\
-GRB 100424A & 0.029 & $8\times600$ & $8\times600$ & $8\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-03-11 & \\
-GRB 100508A & 0.024 & $2\times1200$ & $2\times1200$ & $8\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2012-12-25 & \\
+GRB 061202  & 0.131 & $4\times 900$ & $4\times 900$ & $9\times 300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2014-Nov-29 &  \\
+GRB 070103  & 0.058 & $2\times 900$ & $2\times 900$ & $4\times 450$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-Oct-29 & (1), (3) \\
+GRB 070110  & 0.013 & $4\times 1680$ & $4\times 1680$ & $8\times 840$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-Oct-29 & (1), (7) \\
+GRB 070129  & 0.120 & $4\times 900$ & $4\times 900$ & $12\times 300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2009-Dec-23 & (1)\\
+GRB 070224  & 0.049 & $8\times 940$ & $8\times 900$ & $24\times 300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-Mar-20 & (1), (3) \\
+ 			& 		& $4\times 900$ & $4\times 920$ & $12\times 320$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-Mar-20 & \\
+GRB 070306  & 0.024 & $6\times 900$ & $6\times 900$ & $6\times 900$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-Dec-09 & (1), (5), (8), (9) \\
+GRB 070318  & 0.015 & $4\times 910$ & $4\times 885$ & $12\times 300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-Oct-06 & (1) \\
+GRB 070328  & 0.031 & $7\times 844$ & $7\times 810$ & $8\times 875$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2012-Sep-21 & (1) \\
+ 			& 		& $1\times 589$ & $1\times 585$ & \nodata & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2012-Sep-21 & \\
+GRB 070419B & 0.076 & $4\times 1800$ & $4\times 1800$ & $12\times 600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-Oct-20 & (1) \\
+GRB 070521  & 0.023 & $4\times 900$ & $4\times 900$ & $12\times 300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-Apr-03 & (5), (10) \\
+ 			& 		& $4\times 900$ & $4\times 900$ & $12\times 300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-May-07 & \\
+GRB 070802  & 0.023 & $4\times 1800$ & $4\times 1800$ & $8\times 900$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-Oct-30 & (1), (5), (9), (11) \\
+GRB 071021  & 0.057 & $4\times 1800$ & $4\times 1800$ & $12\times 600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-Sep-06 & (3), (5) \\
+%GRB 071117  & 0.020 & $1\times 1800$ & $1\times 1708$ & $2\times 900$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-Aug-14 & \\
+%                      &           & $1\times 1714$ & $1\times 1708$ & \nodata & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-Aug-14 & \\
+GRB 080207  & 0.020 & $4\times 1800$ & $4\times 1800$ & $12\times 600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-Apr-24 & (3), (5), (1-Jan-0) \\
+GRB 080413B & 0.032 & $3\times 1800$ & $3\times 1800$ & $6\times 900$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-Aug-15 & (23) \\
+%GRB 080520  & 0.068 & $4\times 2700$ & $4\times 2700$ & $12\times 900$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-Aug-13 & \\
+% 			& 		& $1\times 1800$ & $1\times 1800$ & $2\times 900$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-Aug-13 & \\
+GRB 080602	& 0.025	& $4\times 900$	 & $4\times 900$ & $12\times 300$ &	1\farc{0} &	0\farc{9} &	0\farc{9} &	2013-Aug-18	& (10) \\%
+		    &		& $4\times 900$	 & $4\times 900$ & $12\times 300$ &	1\farc{0} &	0\farc{9} &	0\farc{9} &	2013-Aug-19	& \\
+GRB 080605  & 0.118 & $4\times885$ & $4\times910$ & $12\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-Apr-26 & (9), (12) \\
+GRB 080804  & 0.014 & $4\times1350$ & $4\times1350$ & $12\times450$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-Apr-19 & \\
+GRB 080805  & 0.037 & $4\times885$ & $4\times910$ & $12\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-May-13 & (9) \\
+GRB 081109  & 0.017 & $2\times1200$ & $2\times1200$ & $4\times600$ & 1\farc{6} & 1\farc{5} & 0\farc{9}$JH$ & 2012-Oct-13 & (5), (9)\\
+ 			& 		& $2\times1200$ & $2\times1200$ & $4\times600$ & 1\farc{6} & 1\farc{5} & 0\farc{9}$JH$ & 2012-Nov-14 & \\
+GRB	081210	& 0.066	& $4\times900$	& $4\times900$	& $12\times300$	& 1\farc{0}	& 1\farc{0}	& 0\farc{9}	& 2014-Oct-19 &	\\
+GRB 081221  & 0.019 & $4\times1800$ & $4\times1800$ & $12\times600$ & 1\farc{3} & 1\farc{2} & 1\farc{2} & 2011-Sep-01 & (5), (14) \\
+GRB 090113  & 0.072 & $2\times1800$ & $2\times1800$ & $4\times900$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2011-Sep-06 & (3) \\
+GRB 090201  & 0.059 & $2\times1200$ & $2\times1200$ & $8\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-Dec-25 & \\
+ 			& 		& $2\times1200$ & $2\times1200$ & $8\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-Dec-31 & \\
+GRB 090323  & 0.021 & $3\times1560$ & $3\times1560$ & $9\times520$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-Mar-11 & (15) \\
+GRB 090407  & 0.059 & $4\times1800$ & $4\times1800$ & $8\times900$ & 0\farc{8} & 0\farc{7} & 0\farc{6} & 2010-Oct-30 & (3), (5) \\
+GRB 090926B & 0.020 & $2\times1200$ & $2\times1200$ & $8\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2012-Nov-14 & (9) \\
+ 			& 		& $2\times1200$ & $2\times1200$ & $8\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2012-Dec-17 & \\
+GRB 091018  & 0.025 & $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2009-Oct-19 & (16) \\
+GRB 091127  & 0.033 & $4\times1500$ & $4\times1500$ & $8\times750$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2009-Dec-02 & (17) \\
+%GRB 100316B & 0.120 & $7\times650$ & $7\times650$ & $21\times270$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-Apr-17 & \\
+GRB 100316D & 0.101 & $4\times1200$ & $4\times1200$ & $12\times400$ & 0\farc{8} & 0\farc{7} & 0\farc{9} & 2011-Apr-03 & (18), (19) \\
+GRB 100418A & 0.063 & $4\times1200$ & $4\times1200$ & $8\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-Apr-21 & (20), (21) \\
+GRB 100424A & 0.029 & $8\times600$ & $8\times600$ & $8\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-Mar-11 & \\
+GRB 100508A & 0.024 & $2\times1200$ & $2\times1200$ & $8\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2012-Dec-25 & \\
 % GRB 100606A added by hand during refereeing
-GRB 100606A  & 0.023 & $4\times 900$ & $4\times 900$ & $9\times 300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2014-11-18 &  \\
-		     &       & $4\times 900$ & $4\times 900$ & $9\times 300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2014-11-28 &  \\
-GRB 100615A & 0.039 & $4\times1200$ & $4\times1200$ & $16\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2013-03-05 & \\
-GRB 100621A & 0.027 & $2\times1200$ & $2\times1200$ & $8\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2012-10-16 & (9), (22) \\
-GRB 100724A & 0.037 & $4\times1200$ & $4\times1200$ & $12\times400$ & 0\farc{8} & 0\farc{7} & 0\farc{9} & 2011-04-03 & \\
-GRB 100728A & 0.151 & $2\times1200$ & $2\times1200$ & $8\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-11-15 & \\
-GRB 100814A & 0.017 & $4\times1200$ & $4\times1200$ & $8\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-08-18 & \\
-GRB 100816A & 0.074 & $4\times1200$ & $4\times1200$ & $8\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-08-17 & \\
-%GRB 110731A & 0.155 & $2\times2100$ & $2\times2100$ & $6\times700$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-04-19 & \\
-% 			& 		& $2\times2400$ & $2\times2400$ & $6\times800$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-04-19 & \\
-GRB 110808A & 0.009 & $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-08-08 & \\
-GRB 110818A & 0.030 & $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-05-08 & \\
- 			& 		& $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-05-10 & \\
- 			& 		& $8\times600$ & $8\times600$ & $8\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-06-04 & \\
-GRB 110918A & 0.017 & $2\times1200$ & $2\times1200$ & $4\times600$ & 1\farc{6} & 1\farc{5} & 0\farc{9}$JH$ & 2012-12-17 & (23) \\
- 			& 		& $2\times1200$ & $2\times1200$ & $4\times600$ & 1\farc{6} & 1\farc{5} & 0\farc{9}$JH$ & 2013-01-07 & \\
-		 	& 		& $2\times1200$ & $2\times1200$ & $4\times600$ & 1\farc{6} & 1\farc{5} & 0\farc{9}$JH$ & 2013-01-16 & \\
-GRB 111123A & 0.047 & $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-03-07 & \\
-GRB 111129A & 0.036 & $4\times1200$ & $4\times1200$ & $16\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-11-29 & \\
-GRB 111209A & 0.015 & $4\times2400$ & $4\times2400$ & $16\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-12-29 & (24) \\
-GRB 111211A & 0.041 & $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-12-13 & \\
-GRB 111228A & 0.028 & $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-12-29 & \\
-GRB 120118B & 0.124 & $6\times600$ & $6\times600$ & $6\times600$ & 1\farc{0} & 1\farc{0} & 0\farc{9}$JH$ & 2013-02-13 & \\
-GRB 120119A & 0.096 & $6\times600$ & $6\times600$ & $6\times600$ & 1\farc{0} & 1\farc{0} & 0\farc{6}$JH$ & 2013-02-26 &	\\
-GRB 120211A & 0.026 & $4\times1200$ & $4\times1200$ & $16\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-02-17 & \\
-GRB 120224A & 0.032 & $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-02-25 & \\
-GRB 120422A & 0.030 & $4\times1200$ & $4\times1200$ & $16\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-04-22 & (25) \\
-GRB 120624B & 0.048 & $1\times1200$ & $1\times1200$ & $4\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-07-12 & (26) \\
-            &       & $3\times1200$ & $3\times1200$ & $12\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-07-13 & \\
-GRB 120714B & 0.008 & $4\times1200$ & $4\times1200$ & $16\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-07-15 & \\
-GRB 120722A & 0.042 & $2\times2400$ & $2\times2400$ & $8\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-07-23 & \\
-GRB 120805A & 0.027 & $4\times900$ & $4\times900$ & $4\times900$ & 1\farc{0} & 1\farc{0} & 0\farc{9}$JH$ & 2012-08-15 & \\
-GRB 120815A & 0.099 & $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-04-14 & (27) \\
- 			&     	& $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-04-16 & \\
- 			& 		& $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-04-21 & \\
-GRB 121024A & 0.088 & $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-10-24 & (28) \\
-GRB 121027A & 0.017 & $14\times600$ & $14\times600$ & $14\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-10-30 &  (23)\\
+GRB 100606A  & 0.023 & $4\times 900$ & $4\times 900$ & $9\times 300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2014-Nov-18 &  \\
+		     &       & $4\times 900$ & $4\times 900$ & $9\times 300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2014-Nov-28 &  \\
+GRB 100615A & 0.039 & $4\times1200$ & $4\times1200$ & $16\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2013-Mar-05 & \\
+GRB 100621A & 0.027 & $2\times1200$ & $2\times1200$ & $8\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2012-Oct-16 & (9), (22) \\
+GRB 100724A & 0.037 & $4\times1200$ & $4\times1200$ & $12\times400$ & 0\farc{8} & 0\farc{7} & 0\farc{9} & 2011-Apr-03 & \\
+GRB 100728A & 0.151 & $2\times1200$ & $2\times1200$ & $8\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-Nov-15 & \\
+GRB 100814A & 0.017 & $4\times1200$ & $4\times1200$ & $8\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-Aug-18 & \\
+GRB 100816A & 0.074 & $4\times1200$ & $4\times1200$ & $8\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2010-Aug-17 & \\
+%GRB 110731A & 0.155 & $2\times2100$ & $2\times2100$ & $6\times700$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-Apr-19 & \\
+% 			& 		& $2\times2400$ & $2\times2400$ & $6\times800$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-Apr-19 & \\
+GRB 110808A & 0.009 & $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-Aug-08 & \\
+GRB 110818A & 0.030 & $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-May-08 & \\
+ 			& 		& $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-May-10 & \\
+ 			& 		& $8\times600$ & $8\times600$ & $8\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-Jul-04 & \\
+GRB 110918A & 0.017 & $2\times1200$ & $2\times1200$ & $4\times600$ & 1\farc{6} & 1\farc{5} & 0\farc{9}$JH$ & 2012-Dec-17 & (23) \\
+ 			& 		& $2\times1200$ & $2\times1200$ & $4\times600$ & 1\farc{6} & 1\farc{5} & 0\farc{9}$JH$ & 2013-Jan-07 & \\
+		 	& 		& $2\times1200$ & $2\times1200$ & $4\times600$ & 1\farc{6} & 1\farc{5} & 0\farc{9}$JH$ & 2013-Jan-16 & \\
+GRB 111123A & 0.047 & $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-Apr-07 & \\
+GRB 111129A & 0.036 & $4\times1200$ & $4\times1200$ & $16\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-Apr-29 & \\
+GRB 111209A & 0.015 & $4\times2400$ & $4\times2400$ & $16\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-Dec-29 & (24) \\
+GRB 111211A & 0.041 & $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-Dec-13 & \\
+GRB 111228A & 0.028 & $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2011-Dec-29 & \\
+GRB 120118B & 0.124 & $6\times600$ & $6\times600$ & $6\times600$ & 1\farc{0} & 1\farc{0} & 0\farc{9}$JH$ & 2013-Feb-13 & \\
+GRB 120119A & 0.096 & $6\times600$ & $6\times600$ & $6\times600$ & 1\farc{0} & 1\farc{0} & 0\farc{6}$JH$ & 2013-Feb-26 &	\\
+GRB 120211A & 0.026 & $4\times1200$ & $4\times1200$ & $16\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-Feb-17 & \\
+GRB 120224A & 0.032 & $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-Feb-25 & \\
+GRB 120422A & 0.030 & $4\times1200$ & $4\times1200$ & $16\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-Apr-22 & (25) \\
+GRB 120624B & 0.048 & $1\times1200$ & $1\times1200$ & $4\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-Jul-12 & (26) \\
+            &       & $3\times1200$ & $3\times1200$ & $12\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-Jul-13 & \\
+GRB 120714B & 0.008 & $4\times1200$ & $4\times1200$ & $16\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-Jul-15 & \\
+GRB 120722A & 0.042 & $2\times2400$ & $2\times2400$ & $8\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-Jul-23 & \\
+GRB 120805A & 0.027 & $4\times900$ & $4\times900$ & $4\times900$ & 1\farc{0} & 1\farc{0} & 0\farc{9}$JH$ & 2012-Sep-15 & \\
+GRB 120815A & 0.099 & $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-Apr-14 & (27) \\
+ 			&     	& $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-Apr-16 & \\
+ 			& 		& $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-Apr-21 & \\
+GRB 121024A & 0.088 & $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-Oct-24 & (28) \\
+GRB 121027A & 0.017 & $14\times600$ & $14\times600$ & $14\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-Nov-30 &  (23)\\
 % GRB 121201A added by hand during refereeing
-GRB 121201A  & 0.008 & $4\times 1200$ & $4\times 1200$ & $16\times 300$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2012-12-02 &  \\
-GRB 121209A & 0.039 & $2\times600$ & $2\times600$ & $2\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-12-13 & \\
-GRB 130131B & 0.029 & $8\times900$ & $8\times900$ & $24\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2013-03-09 & \\
-GRB 130427A & 0.017 & $2\times600$ & $2\times600$ & $2\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2013-04-28 & (29) \\
-GRB 130701A & 0.073 & $2\times600$ & $2\times600$ & $2\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2013-07-01 & \\
-GRB 130925A & 0.018 & $4\times1470$ & $4\times1500$ & $20\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2013-09-25 & (30), (31) \\
-GRB 131103A & 0.009 & $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2013-11-05 & \\
-GRB 131105A & 0.030 & $8\times600$ & $8\times600$ & $8\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-11-05 & \\
-GRB 131231A & 0.022 & $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2014-01-01 & \\
-GRB 140114A & 0.014 & $6\times900$ & $6\times900$ & $18\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2014-03-28 & \\
-GRB 140213A & 0.131 & $2\times600$ & $2\times600$ & $2\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2014-02-14 & \\
-GRB 140301A & 0.026 & $12\times600$ & $12\times600$ & $12\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2014-03-02 & \\
-GRB 140430A & 0.117 & $2\times600$ & $2\times600$ & $2\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2014-04-30 & \\
-GRB 140506A & 0.082 & $8\times600$ & $8\times600$ & $8\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2014-05-07 & (32) \\
- 			& 		& $8\times600$ & $8\times600$ & $8\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2014-05-08 & \\
+GRB 121201A  & 0.008 & $4\times 1200$ & $4\times 1200$ & $16\times 300$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2012-Dec-02 &  \\
+GRB 121209A & 0.039 & $2\times600$ & $2\times600$ & $2\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2012-Nov-13 & \\
+GRB 130131B & 0.029 & $8\times900$ & $8\times900$ & $24\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2013-Mar-09 & \\
+GRB 130427A & 0.017 & $2\times600$ & $2\times600$ & $2\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2013-Apr-28 & (29) \\
+GRB 130701A & 0.073 & $2\times600$ & $2\times600$ & $2\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2013-Aug-01 & \\
+GRB 130925A & 0.018 & $4\times1470$ & $4\times1500$ & $20\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2013-Oct-25 & (30), (31) \\
+GRB 131103A & 0.009 & $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2013-Nov-05 & \\
+GRB 131105A & 0.030 & $8\times600$ & $8\times600$ & $8\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2013-Nov-05 & \\
+GRB 131231A & 0.022 & $4\times600$ & $4\times600$ & $4\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2014-Feb-01 & \\
+GRB 140114A & 0.014 & $6\times900$ & $6\times900$ & $18\times300$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2014-Mar-28 & \\
+GRB 140213A & 0.131 & $2\times600$ & $2\times600$ & $2\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2014-Feb-14 & \\
+GRB 140301A & 0.026 & $12\times600$ & $12\times600$ & $12\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9}$JH$ & 2014-Mar-02 & \\
+GRB 140430A & 0.117 & $2\times600$ & $2\times600$ & $2\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2014-Apr-30 & \\
+GRB 140506A & 0.082 & $8\times600$ & $8\times600$ & $8\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2014-May-07 & (32) \\
+ 			& 		& $8\times600$ & $8\times600$ & $8\times600$ & 1\farc{0} & 0\farc{9} & 0\farc{9} & 2014-Jun-08 & \\
 \end{longtable}
 \tablebib{%(1)~\citet{2002ApJ...577..680P}, (2)~\citet{2003A&A...400..127G}, (3)~\citet{2003AJ....125..999B}, (4)~\citet{2003A&A...409..123G},
 %(5)~\citet{2002ApJ...573...85P}, (6)~\citet{2005A&A...438..841M}, (7)~\citet{2003A&A...408..941J}, (8)~\citet{2003A&A...406L..63F},
