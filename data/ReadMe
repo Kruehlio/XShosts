@@ -1,0 +1,230 @@
+J/A+A/???/??? UV/Optical/NIR spectroscopy GRB hosts Kruehler+ 15
+(AA/2014/25561)
+
+================================================================================
+Gamma-ray burst hosts through cosmic time. VLT/X-Shooter emission-line 
+spectroscopy of 96 gamma-ray-burst-selected galaxies at 0.1 < z < 3.6
+       T. Kruehler, D. Malesani, J. P. U. Fynbo, et al.
+================================================================================
+ADC_Keywords: Spectroscopy, Spectroscopy 
+
+keywords:  Gamma-ray burst: general
+           Galaxies: evolution 
+           Galaxies: high-redshift 
+           Galaxies: star formation
+
+Description: Flux-calibrated VLT/X-shooter medium resolution spectra of GRB
+             host galaxies, selected to show emission lines. Wavelengths are
+             in the observed frame, in vacuum, and in a heliocentric reference 
+             frame. Fluxes are in units of erg s^{-1} cm^{-2} \AA^{-1} and are 
+             all corrected for Galactic foreground reddening according to 
+             Schlafly & Finkbeiner (2011), ApJ, 737, 103. Fluxes are not 
+             corrected for host extinction or slit losses. Some spectra are 
+             taken shortly after the GRB. In these cases the continuum is 
+             dominated by the bright afterglow and not by the stellar light of 
+             the host galaxy.
+
+File Summary:
+--------------------------------------------------------------------------------
+FileName                              Lrecl  Records Explanations
+--------------------------------------------------------------------------------
+ReadMe                                80     .       This file
+GRB050416A_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB050416A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB050525A_nir_vac_helio_1d_ebv.dat   55     18359   Data file
+GRB050525A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB050714B_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB050714B_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB050819A_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB050819A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB050824_nir_vac_helio_1d_ebv.dat    55     18359   Data file
+GRB050824_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB050915A_nir_vac_helio_1d_ebv.dat   55     18359   Data file
+GRB050915A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB051001_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB051001_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB051016B_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB051016B_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB051022A_nir_vac_helio_1d_ebv.dat   55     18359   Data file
+GRB051022A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB051117B_uvb_vac_helio_1d_ebv.dat   55     6632    Data file
+GRB051117B_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB060204B_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB060204B_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB060306_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB060306_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB060604_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB060604_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB060707_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB060707_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB060719_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB060719_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB060729_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB060805A_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB060814_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB060814_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB060912A_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB060912A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB060923B_nir_vac_helio_1d_ebv.dat   55     18359   Data file
+GRB060923B_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB060926_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB060926_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB061021_uvb_vac_helio_1d_ebv.dat    55     6632    Data file
+GRB061021_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB061110A_nir_vac_helio_1d_ebv.dat   55     18359   Data file
+GRB061110A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB061202_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB061202_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB070103_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB070103_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB070110_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB070110_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB070129_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB070129_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB070224_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB070224_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB070306_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB070306_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB070318_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB070318_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB070328_nir_vac_helio_1d_ebv.dat    55     18359   Data file
+GRB070328_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB070419B_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB070419B_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB070521_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB070521_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB070802_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB070802_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB071021_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB071021_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB080207_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB080207_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB080413B_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB080413B_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB080602_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB080602_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB080605_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB080605_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB080804_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB080804_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB080805_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB080805_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB081109_nir_vac_helio_1d_ebv.dat    55     18359   Data file
+GRB081109_vis_vac_helio_1d_ebv.dat    55     23503   Data file
+GRB081210_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB081210_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB081221_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB081221_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB090113_nir_vac_helio_1d_ebv.dat    55     18359   Data file
+GRB090113_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB090201_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB090201_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB090323_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB090323_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB090407_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB090407_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB090926B_nir_vac_helio_1d_ebv.dat   55     18359   Data file
+GRB090926B_vis_vac_helio_1d_ebv.dat   55     23503   Data file
+GRB091018_nir_vac_helio_1d_ebv.dat    55     24171   Data file
+GRB091018_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB091127_uvb_vac_helio_1d_ebv.dat    55     6631    Data file
+GRB091127_vis_vac_helio_1d_ebv.dat    55     11754   Data file
+GRB100316B_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB100316B_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB100316D_uvb_vac_helio_1d_ebv.dat   55     5906    Data file
+GRB100316D_vis_vac_helio_1d_ebv.dat   55     11753   Data file
+GRB100418A_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB100418A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB100424A_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB100424A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB100508A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB100606A_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB100615A_nir_vac_helio_1d_ebv.dat   55     18359   Data file
+GRB100615A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB100621A_nir_vac_helio_1d_ebv.dat   55     18359   Data file
+GRB100621A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB100724A_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB100724A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB100728A_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB100728A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB100814A_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB100814A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB100816A_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB100816A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB110808A_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB110808A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB110818A_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB110818A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB110918A_nir_vac_helio_1d_ebv.dat   55     11016   Data file
+GRB110918A_vis_vac_helio_1d_ebv.dat   55     9403    Data file
+GRB111123A_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB111123A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB111129A_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB111129A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB111209A_nir_vac_helio_1d_ebv.dat   55     24170   Data file
+GRB111209A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB111211A_uvb_vac_helio_1d_ebv.dat   55     6633    Data file
+GRB111211A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB111228A_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB111228A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB120118B_nir_vac_helio_1d_ebv.dat   55     18359   Data file
+GRB120118B_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB120119A_nir_vac_helio_1d_ebv.dat   55     18359   Data file
+GRB120119A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB120211A_uvb_vac_helio_1d_ebv.dat   55     6631    Data file
+GRB120211A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB120224A_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB120224A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB120422A_uvb_vac_helio_1d_ebv.dat   55     6631    Data file
+GRB120422A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB120624B_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB120714B_uvb_vac_helio_1d_ebv.dat   55     6632    Data file
+GRB120714B_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB120722A_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB120722A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB120805A_uvb_vac_helio_1d_ebv.dat   55     6631    Data file
+GRB120805A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB120815A_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB120815A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB121024A_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB121024A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB121027A_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB121027A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB121201A_nir_vac_helio_1d_ebv.dat   55     18359   Data file
+GRB121201A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB130131B_nir_vac_helio_1d_ebv.dat   55     18359   Data file
+GRB130131B_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB130427A_uvb_vac_helio_1d_ebv.dat   55     6631    Data file
+GRB130427A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB130701A_nir_vac_helio_1d_ebv.dat   55     18359   Data file
+GRB130701A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB130925A_uvb_vac_helio_1d_ebv.dat   55     6632    Data file
+GRB130925A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB131103A_nir_vac_helio_1d_ebv.dat   55     18359   Data file
+GRB131103A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB131105A_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB131105A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB131231A_nir_vac_helio_1d_ebv.dat   55     18359   Data file
+GRB131231A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB140114A_uvb_vac_helio_1d_ebv.dat   55     6632    Data file
+GRB140114A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB140213A_nir_vac_helio_1d_ebv.dat   55     18359   Data file
+GRB140213A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB140301A_nir_vac_helio_1d_ebv.dat   55     18359   Data file
+GRB140301A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB140430A_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB140430A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+GRB140506A_nir_vac_helio_1d_ebv.dat   55     24171   Data file
+GRB140506A_vis_vac_helio_1d_ebv.dat   55     11754   Data file
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of all data files
+--------------------------------------------------------------------------------
+   Bytes Format  Units             Labels      Explanations
+--------------------------------------------------------------------------------
+   1- 11 F4.5    <?AA>             Wavelength  Heliocentric vacuum wavelength
+   13-21 E1.3    erg/cm^2/s/<?AA>  Flux        Spectrum (Flux density)
+   23-31 E1.3    erg/cm^2/s/<?AA>  Error       Error spectrum (Flux density error)
+--------------------------------------------------------------------------------
+================================================================================
+(End)                            Thomas Kruehler                     05-Jul-2015

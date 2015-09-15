@@ -170,7 +170,7 @@ GRB 140506A & 0.082 & $8\times600$ & $8\times600$ & $8\times600$ & 1\farc{0} & 0
 \begin{Longtab}{1}
 %\begin{landscape}
 \begin{longtable}{c c c c c c}
-\caption{Balmer lines fluxes of GRB hosts\label{tab:balmerlines}}\\
+\caption{Fluxes of Balmer lines for GRB hosts\label{tab:balmerlines}}\\
 \hline\hline
 {GRB host} & {Redshift} & $\rm{H}\delta$ & $\rm{H}\gamma$ & $\rm{H}\beta$ & $\rm{H}\alpha$ \\
 \hline
@@ -187,8 +187,8 @@ GRB 140506A & 0.082 & $8\times600$ & $8\times600$ & $8\times600$ & 1\farc{0} & 0
 \centering
 \begin{minipage}{5.8in}
 \tablefoot{
-Measurements are in units of $10^{-17}$\,\erg, and are corrected for the Galactic foreground reddening. A correction for slit-loss based on broad-band photometry has been applied to the measurements as described in the text. These values thus represent host-integrated measurements except for GRB~100316D (see below). Line fluxes are not corrected for host-intrinsic extinction. The first error represents the statistical error due to photon statistics and line-flux measurement. The second error is the systematic error in the absolute flux calibration due to slit-loss and scaling to photometry. Redshifts are given in a heliocentric reference frame. No data means that either the wavelength range of the respective lines is not covered, all data in that wavelength range have been excluded from the automated fitting procedure, or no meaningful constraints could be obtained for the given line.\\
-$^{a}$ With the lowest redshift in the sample of $z=0.0592$, GRB~100316D is very close-by. The fraction of the host that is covered by the slit is thus so small that it does not allow us to derive host-integrated measurements. These values are thus as derived from the observed spectrum and not scaled by photometry. No systematic error on the line fluxes is given in this case.}
+Measurements are in units of $10^{-17}$\,\erg, and are corrected for the Galactic foreground reddening. A correction for slit-loss based on broad-band photometry has been applied to the measurements as described in the text. These values thus represent host-integrated measurements except for GRB~100316D (see below). Line fluxes are not corrected for host-intrinsic extinction. The first error represents the statistical error due to photon statistics and line-flux measurement. The second error is the systematic error in the absolute flux calibration due to slit-loss and scaling to photometry. Redshifts are given in a heliocentric reference frame. No data means that either the wavelength range of the respective line is not covered, all data in that wavelength range have been excluded from the automated fitting procedure, or no meaningful constraints could be obtained for the given line.\\
+$^{a}$ GRB~100316D has the lowest redshift in the sample ($z=0.0592$). The fraction of the host that is covered by the slit is too small to derive representative host-integrated measurements. These values are thus as derived from the observed spectrum and not scaled by photometry. No systematic error on the line fluxes is given in this case.}
 \end{minipage}
 
 %\end{landscape}
@@ -196,7 +196,7 @@ $^{a}$ With the lowest redshift in the sample of $z=0.0592$, GRB~100316D is very
 \begin{Longtab}{2}
 \begin{landscape}
 \begin{longtable}{c c c c c c c c}
-\caption{Fluxes of forbidden lines of GRB hosts\label{tab:forbiddenlines}}\\
+\caption{Fluxes of forbidden lines for GRB hosts\label{tab:forbiddenlines}}\\
 \hline\hline
 {GRB host} & {Redshift} & \multicolumn{2}{c}{$\left[\ion{O}{ii}\right]$} & $\left[\ion{Ne}{iii}\right]$ & \multicolumn{2}{c}{$\left[\ion{O}{iii}\right]$} & $\left[\ion{N}{ii}\right]$  \\
            &            & $\lambda$3726 & $\lambda$3729 & $\lambda$3869 & $\lambda$4959 & $\lambda$5007 & $\lambda$6584 \\
@@ -214,8 +214,8 @@ $^{a}$ With the lowest redshift in the sample of $z=0.0592$, GRB~100316D is very
 \end{longtable}
 \centering
 \begin{minipage}{8.0in}
-\tablefoot{Measurements are in units of $10^{-17}$\,\erg, and are corrected for the Galactic foreground reddening. A correction for slit-loss based on broad-band photometry has been applied to the measurements as described in the text. These values thus represent host-integrated measurements except for GRB~100316D (see below). Line fluxes are not corrected for host-intrinsic extinction. The first error represents the statistical error due to photon statistics and line-flux measurement. The second error is the systematic error in the absolute flux calibration due to slit-loss and scaling to photometry. Redshifts are given in a heliocentric reference frame. No data means that either the wavelength range of the respective lines is not covered, all data in that wavelength range have been excluded from the automated fitting procedure, or no meaningful constraints could be obtained for the given line.\\
-$^{a}$ With the lowest redshift in the sample of $z=0.0592$, GRB~100316D is very close-by. The fraction of the host that is covered by the slit is thus too small to derive representative host-integrated measurements. These values are thus as derived from the observed spectrum and not scaled by photometry. No systematic error on the line fluxes is given in this case.\\
+\tablefoot{Measurements are in units of $10^{-17}$\,\erg, and are corrected for the Galactic foreground reddening. A correction for slit-loss based on broad-band photometry has been applied to the measurements as described in the text. These values thus represent host-integrated measurements except for GRB~100316D (see below). Line fluxes are not corrected for host-intrinsic extinction. The first error represents the statistical error due to photon statistics and line-flux measurement. The second error is the systematic error in the absolute flux calibration due to slit-loss and scaling to photometry. Redshifts are given in a heliocentric reference frame. No data means that either the wavelength range of the respective line is not covered, all data in that wavelength range have been excluded from the automated fitting procedure, or no meaningful constraints could be obtained for the given line.\\
+$^{a}$ GRB~100316D has the lowest redshift in the sample ($z=0.0592$). The fraction of the host that is covered by the slit is too small to derive representative host-integrated measurements. These values are thus as derived from the observed spectrum and not scaled by photometry. No systematic error on the line fluxes is given in this case.\\
 $^{b}$ In these cases, we can not constrain the individual components of the  \oii\,doublet well, either because of telluric absorption, skylines or low signal-to-noise level. We constrain the ratio between the two components to be between \nicefrac{2}{3} and \nicefrac{3}{2}, and provide the measurement for the combined fit of \oii($\lambda$3726) and \oii($\lambda$3729).\\
 $^{c}$ These galaxies have non-trivial velocity structure. We are not able to uniquely disentangle the individual components of the \oii\,doublet, so we provide the total \oii\,flux instead.}
 \end{minipage}
@@ -245,8 +245,8 @@ $^{c}$ These galaxies have non-trivial velocity structure. We are not able to un
 \centering
 \begin{minipage}{5.3in}
 \tablefoot{
-$^{a}$ The physical parameters presented here are integrated and thus averaged over the entire galaxy. We do not perform a resolved analysis (neither spatially, nor in velocity space). In some cases \citep[e.g., GRB~120422A][]{2014A&A...566A.102S}, a spatially resolved analysis leads to somewhat different results and interpretation of the galaxy properties.
-$^{b}$ The quoted error on SFR is logarithmic because it contains the error in the dust correction. The derived SFR also has a lower ceiling because of the physical condition that $A_V > 0$\,mag. The lower ceiling is given through SFR$_{\rm min} = 4.8 \times \rm{F_{{H}\alpha, 42}}$.\\}
+$^{a}$ The physical parameters presented here are integrated and thus averaged over the entire galaxy. We do not perform a resolved analysis (neither spatially, nor in velocity space). In some cases \citep[e.g., GRB~120422A,][]{2014A&A...566A.102S}, a spatially resolved analysis leads to somewhat different results and interpretation of the galaxy properties.
+$^{b}$ The quoted error on SFR is logarithmic because it contains the error in the dust correction. The derived SFR also has a lower limit because of the physical condition that $A_V > 0$\,mag. This lower limit is given by SFR$_{\rm min} = 4.8 \times \rm{F_{{H}\alpha, 42}}$.\\}
 \end{minipage}
 
 %\end{landscape}

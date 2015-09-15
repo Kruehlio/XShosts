@@ -1,0 +1,30 @@
+\begin{longtab}
+%\begin{landscape}
+\begin{longtable}{c c c c c c c}
+\caption{Physical properties of GRB hosts\label{tab:physprop}}\\
+\hline\hline
+{GRB host$^{a}$} & {Redshift} & $E_{B-V}$ & SF-tracer & SFR$^{b}$  & $\sigma$ & $Z$ \\[1.5pt]
+\hline
+{}         &    {}      & (mag)     &   & (\Msunyr) & (\kms) & $12+\log(\rm{O/H})$ \\[1.5pt]
+\hline
+\endfirsthead
+\hline 
+\caption{Physical properties of GRB hosts (continued)}\\
+\hline\hline
+{GRB host} & {Redshift} & $E_{B-V}$ & SF-tracer & SFR$^{a}$  & $\sigma$ & $Z$ \\[1.5pt]
+\hline
+{}         &    {}      & (mag)     &    & (\Msunyr) & (\kms) & $12+\log(\rm{O/H})$ \\[1.5pt]
+\hline
+\endhead
+\input{tables/grb_prop.tex}
+\hline\noalign{\smallskip}
+\end{longtable}
+\centering
+\begin{minipage}{5.3in}
+\tablefoot{
+$^{a}$ The physical parameters presented here are integrated and thus averaged over the entire galaxy. We do not perform a resolved analysis (neither spatially, nor in velocity space). In some cases \citep[e.g., GRB~120422A,][]{2014A&A...566A.102S}, a spatially resolved analysis leads to somewhat different results and interpretation of the galaxy properties.
+$^{b}$ The quoted error on SFR is logarithmic because it contains the error in the dust correction. The derived SFR also has a lower limit because of the physical condition that $A_V > 0$\,mag. This lower limit is given by SFR$_{\rm min} = 4.8 \times \rm{F_{{H}\alpha, 42}}$.\\}
+\end{minipage}
+
+%\end{landscape}
+\end{longtab}
